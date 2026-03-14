@@ -18,7 +18,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-8 mb-8">
           <div className="text-center md:text-left">
             <span className="font-display text-xl font-semibold text-text-main">
-              Synera<span className="text-accent">.</span>
+              Synera <span className="text-accent">Technologies</span>
             </span>
             <p className="font-body text-text-muted text-sm mt-1">
               Automatización inteligente para empresas reales
