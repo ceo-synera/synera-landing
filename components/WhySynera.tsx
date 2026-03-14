@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 
 const differentiators = [
   {
-    icon: "📍",
-    title: "Somos locales",
-    desc: "Uruguay, reuniones por Google Meet o presencial según prefieras.",
+    icon: "🌐",
+    title: "Atención remota real",
+    desc: "Reuniones por Google Meet, atención personalizada y respuesta rápida.",
   },
   {
     icon: "🌱",
