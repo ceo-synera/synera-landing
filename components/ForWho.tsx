@@ -50,8 +50,8 @@ export default function ForWho() {
           className="bg-secondary border border-border rounded-sm p-8 max-w-2xl mx-auto text-center"
         >
           <p className="font-body text-text-muted text-base leading-relaxed">
-            Somos una agencia uruguaya. Nos reunimos en persona, hablamos el
-            mismo idioma y{" "}
+            Somos una agencia uruguaya. Nos reunimos por Google Meet, hablamos
+            el mismo idioma y{" "}
             <span className="text-text-main font-medium">
               entendemos el mercado local.
             </span>

@@ -6,7 +6,7 @@ const differentiators = [
   {
     icon: "📍",
     title: "Somos locales",
-    desc: "Uruguay, presencia real, reuniones en persona.",
+    desc: "Uruguay, reuniones por Google Meet o presencial según prefieras.",
   },
   {
     icon: "🌱",

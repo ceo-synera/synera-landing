@@ -6,7 +6,7 @@ const steps = [
   {
     emoji: "🗣",
     title: "Reunión gratuita",
-    desc: "Entendemos tu negocio y tu problema",
+    desc: "Nos reunimos por Google Meet, entendemos tu negocio y tu problema",
   },
   {
     emoji: "📋",
