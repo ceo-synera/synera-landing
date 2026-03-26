@@ -27,7 +27,7 @@ export default function CalendlySection() {
       // @ts-ignore
       Cal("inline", {
         elementOrSelector: "#cal-embed",
-        calLink: "syneratechnologies/30min",
+        calLink: "syneratechnologies/llamada-synera-30-min",
         layout: "month_view",
       });
     };

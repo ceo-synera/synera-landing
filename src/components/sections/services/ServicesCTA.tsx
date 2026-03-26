@@ -11,7 +11,7 @@ export default function ServicesCTA() {
       title={t("cta_title")}
       subtitle={t("cta_subtitle")}
       primaryLabel={t("cta_primary")}
-      primaryHref="https://cal.com/syneratechnologies/30min"
+      primaryHref="https://cal.com/syneratechnologies/llamada-synera-30-min"
       secondaryLabel={t("cta_secondary")}
       secondaryHref="https://t.me/syneratech_bot"
     />

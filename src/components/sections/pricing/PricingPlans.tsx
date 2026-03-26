@@ -260,7 +260,7 @@ export default function PricingPlans() {
                 t("plan3_f6"),
               ]}
               buttonLabel={t("btn_call")}
-              buttonHref="https://cal.com/syneratechnologies/30min"
+              buttonHref="https://cal.com/syneratechnologies/llamada-synera-30-min"
               style={fadeStyle(0.24)}
             />
           </div>
@@ -290,7 +290,7 @@ export default function PricingPlans() {
                 t("ot2_f5"),
               ]}
               buttonLabel={t("btn_call")}
-              buttonHref="https://cal.com/syneratechnologies/30min"
+              buttonHref="https://cal.com/syneratechnologies/llamada-synera-30-min"
               style={fadeStyle(0.16)}
             />
           </div>

@@ -163,7 +163,7 @@ export default function ContactChannels() {
               </span>
             }
             btnLabel={t("ch3_btn")}
-            btnHref="https://cal.com/syneratechnologies/30min"
+            btnHref="https://cal.com/syneratechnologies/llamada-synera-30-min"
             btnStyle="teal"
             style={fadeStyle(0.2)}
           />
