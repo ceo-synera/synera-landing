@@ -17,18 +17,17 @@ export default function CalendlySection() {
 
   useEffect(() => {
     const script = document.createElement("script");
-    script.src = "https://app.cal.com/embed/embed.js";
-    script.async = true;
-    script.onload = () => {
-      // @ts-ignore
-      Cal("init", { origin: "https://cal.com" });
-      // @ts-ignore
-      Cal("inline", {
-        elementOrSelector: "#cal-embed",
+    script.type = "text/javascript";
+    script.innerHTML = `
+      (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+      Cal("init", "llamada-synera-30-min", {origin:"https://app.cal.com"});
+      Cal.ns["llamada-synera-30-min"]("inline", {
+        elementOrSelector:"#my-cal-inline-llamada-synera-30-min",
+        config: {"layout":"month_view","useSlotsViewOnSmallScreen":"true"},
         calLink: "syneratechnologies/llamada-synera-30-min",
-        layout: "month_view",
       });
-    };
+      Cal.ns["llamada-synera-30-min"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+    `;
     document.body.appendChild(script);
     return () => {
       document.body.removeChild(script);
@@ -49,11 +48,11 @@ export default function CalendlySection() {
           </p>
         </div>
 
-        {/* Cal.com embed — no fade wrapper so Cal renders in a visible container */}
+        {/* Cal.com embed */}
         <div
-          id="cal-embed"
+          id="my-cal-inline-llamada-synera-30-min"
           className="bg-white border border-border-light rounded-2xl overflow-hidden"
-          style={{ minHeight: 600 }}
+          style={{ width: "100%", minHeight: 600, overflow: "scroll" }}
         />
       </div>
     </section>
