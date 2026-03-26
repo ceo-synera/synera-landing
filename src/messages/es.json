@@ -81,7 +81,6 @@
     "hero_title": "Soluciones de IA para cada necesidad",
     "hero_subtitle": "Desde bots listos para usar hasta automatizaciones completamente personalizadas. Encontrá lo que tu negocio necesita.",
     "breadcrumb_home": "Inicio",
-
     "bots_label": "Productos listos",
     "bots_title": "Bots que podés contratar hoy",
     "bots_subtitle": "Soluciones probadas y listas para activar. Sin desarrollo a medida, sin esperas largas.",
@@ -89,7 +88,6 @@
     "price_label": "Precio",
     "btn_hire": "Contratar este bot",
     "btn_info": "Ver detalles →",
-
     "bot1_title": "Bot Contable",
     "bot1_desc": "Te mandamos un documento y el bot lo organiza automáticamente en Google Drive y transcribe todos los datos a un Google Sheet con la información completa y ordenada.",
     "bot1_f1": "Recibe documentos por cualquier canal",
@@ -99,7 +97,6 @@
     "bot1_f5": "Disponible 24/7, sin intervención manual",
     "bot1_price": "$69 USD/mes",
     "bot1_setup": "Setup $149 USD",
-
     "bot2_title": "Bot Creadores de Contenido",
     "bot2_desc": "Recibís reportes semanales con los mejores posts y tendencias de tu nicho en las redes que elijas: Twitter/X, TikTok, Instagram, YouTube, LinkedIn y Threads.",
     "bot2_f1": "Reportes semanales de tendencias de tu nicho",
@@ -110,7 +107,6 @@
     "bot2_f6": "Configurás vos qué redes y qué nicho seguir",
     "bot2_price": "$49 USD/mes",
     "bot2_setup": "Setup $99 USD",
-
     "bot3_title": "Bot Audio → Redes Sociales",
     "bot3_desc": "Mandás un audio con lo que querés comunicar, y el bot lo transcribe, lo formatea y lo publica automáticamente en tus redes. La forma más rápida de crear contenido profesional.",
     "bot3_f1": "Transcripción de audio en segundos",
@@ -120,36 +116,30 @@
     "bot3_f5": "Historial de publicaciones",
     "bot3_price": "$39 USD/mes",
     "bot3_setup": "Setup $79 USD",
-
     "custom_label": "A medida",
     "custom_title": "¿Necesitás algo específico?",
     "custom_subtitle": "Si tu negocio tiene necesidades únicas, diseñamos la solución desde cero.",
-
     "c1_title": "Bot de agendas y reservas",
     "c1_desc": "Sistema completo de reservas con confirmaciones automáticas, recordatorios y gestión de disponibilidad. Ideal para clínicas, estudios y servicios.",
     "c1_price": "Desde $199 USD",
-
     "c2_title": "Automatizaciones de procesos",
     "c2_desc": "Conectamos tus herramientas existentes y eliminamos tareas manuales. Zapier, Make, APIs propias — lo que necesités.",
     "c2_price": "Cotización personalizada",
     "c2_price_note": "Según complejidad y cantidad de sistemas",
-
     "c3_title": "Bot de atención al cliente",
     "c3_desc": "Respondé el 80% de las consultas frecuentes sin intervención humana. Integrable con WhatsApp, Telegram, web y email.",
     "c3_price": "Desde $199 USD",
-
     "c4_title": "Consultoría estratégica de IA",
     "c4_desc": "Sesión de diagnóstico para identificar oportunidades de automatización en tu negocio y un roadmap de implementación.",
     "c4_price": "$25 USD",
     "c4_price_note": "Incluye entregables en PDF",
-
     "pack_text": "¿Necesitás múltiples bots? Tenemos packs especiales con descuento. Hablemos y armamos algo a tu medida.",
     "pack_btn": "Ver opciones de pack →",
-
     "cta_title": "¿Listo para automatizar?",
     "cta_subtitle": "Agendá una llamada gratuita de 30 minutos y te mostramos exactamente cómo la IA puede transformar tu negocio.",
     "cta_primary": "Agendar llamada gratis →",
-    "cta_secondary": "Escribinos por Telegram"
+    "cta_secondary": "Escribinos por Telegram",
+    "free_call_note": "Gratis · 30 min"
   },
   "pricing_page": {
     "hero_label": "Precios",
@@ -270,24 +260,19 @@
     "hero_title": "Hablemos sobre tu negocio",
     "hero_subtitle": "Elegí el canal que prefieras. Respondemos en menos de 24 horas.",
     "breadcrumb_home": "Inicio",
-
     "ch1_title": "Telegram",
     "ch1_desc": "La forma más rápida de contactarnos. Respondemos en minutos, las 24 horas.",
     "ch1_schedule": "Disponible 24/7",
     "ch1_btn": "Abrir Telegram →",
-
     "ch2_title": "Email",
     "ch2_desc": "Para consultas detalladas o si preferís dejar todo por escrito. Respondemos en menos de 24 horas.",
     "ch2_email": "hola@syneratechnologies.com",
     "ch2_btn": "Enviar email →",
-
     "ch3_title": "Google Meet",
     "ch3_desc": "Agendá una llamada gratuita de 30 minutos. Te mostramos exactamente cómo podemos ayudarte.",
     "ch3_badge": "Gratis · 30 minutos",
     "ch3_btn": "Ver disponibilidad →",
-
     "channels_note": "¿Ya sos cliente? Escribinos por WhatsApp al número que te dimos al contratar.",
-
     "form_title": "Envianos un mensaje",
     "form_subtitle": "Completá el formulario y te respondemos en menos de 24 horas.",
     "field_name": "Nombre completo",
@@ -313,7 +298,6 @@
     "btn_sending": "Enviando...",
     "success_msg": "¡Mensaje enviado! Te respondemos pronto.",
     "error_msg": "Hubo un error. Intentá de nuevo o escribinos directamente.",
-
     "info_hours_title": "Horarios de atención",
     "info_hours_value": "24 horas, 7 días a la semana",
     "info_response_title": "Tiempo de respuesta",
@@ -326,7 +310,6 @@
     "info_langs_title": "Idiomas",
     "info_langs_desc": "Atendemos en español, inglés y chino simplificado.",
     "info_remote": "Synera Technologies opera de forma 100% remota desde Uruguay y Taiwan.",
-
     "calendly_label": "Agendá una llamada",
     "calendly_title": "Elegí un horario que te quede bien",
     "calendly_subtitle": "Llamada gratuita de 30 minutos por Google Meet. Sin compromiso.",
@@ -337,7 +320,6 @@
     "hero_title": "La empresa detrás de las automatizaciones",
     "hero_subtitle": "Somos un equipo especializado en IA aplicada a negocios reales. No vendemos humo: construimos soluciones que funcionan.",
     "breadcrumb_home": "Inicio",
-
     "history_label": "Historia",
     "history_title": "Cómo llegamos hasta acá",
     "history_p1": "Synera nació de una pregunta simple: ¿por qué las empresas siguen haciendo manualmente tareas que una máquina puede hacer mejor y más rápido?",
@@ -349,7 +331,6 @@
     "metric2_label": "Tiempo promedio de entrega",
     "metric3_value": "24/7",
     "metric3_label": "Disponibilidad de los bots",
-
     "team_label": "Equipo",
     "team_title": "Las personas detrás de Synera",
     "team_subtitle": "Un equipo pequeño, enfocado y con experiencia real en IA y automatización.",
@@ -374,7 +355,6 @@
     "member3_tag1": "Marketing",
     "member3_tag2": "Contenidos",
     "member3_tag3": "Branding",
-
     "values_label": "Valores",
     "values_title": "Lo que nos guía",
     "values_subtitle": "Cuatro principios que definen cómo trabajamos y qué tipo de empresa queremos ser.",
@@ -386,7 +366,6 @@
     "v3_desc": "Precios claros, plazos reales y comunicación directa. Sin promesas vacías ni sorpresas al final.",
     "v4_title": "Mejora continua",
     "v4_desc": "El día que dejemos de aprender es el día que dejamos de ser útiles. Iteramos constantemente sobre lo que construimos.",
-
     "cta_title": "¿Querés trabajar con nosotros?",
     "cta_subtitle": "Si tenés un proyecto en mente o simplemente querés explorar cómo la IA puede ayudar a tu negocio, hablemos.",
     "cta_primary": "Contactanos →",

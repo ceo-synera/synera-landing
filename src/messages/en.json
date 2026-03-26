@@ -81,7 +81,6 @@
     "hero_title": "AI solutions for every need",
     "hero_subtitle": "From ready-to-use bots to fully custom automations. Find what your business needs.",
     "breadcrumb_home": "Home",
-
     "bots_label": "Ready products",
     "bots_title": "Bots you can hire today",
     "bots_subtitle": "Proven solutions ready to activate. No custom development, no long waits.",
@@ -89,7 +88,6 @@
     "price_label": "Price",
     "btn_hire": "Hire this bot",
     "btn_info": "See details →",
-
     "bot1_title": "Accounting Bot",
     "bot1_desc": "Send a document and the bot automatically organizes it in Google Drive and transcribes all the data to a Google Sheet with complete, structured information.",
     "bot1_f1": "Receives documents through any channel",
@@ -99,7 +97,6 @@
     "bot1_f5": "Available 24/7, no manual intervention",
     "bot1_price": "$69 USD/mo",
     "bot1_setup": "Setup $149 USD",
-
     "bot2_title": "Content Creator Bot",
     "bot2_desc": "Get weekly reports with the best posts and trends in your niche across the networks you choose: Twitter/X, TikTok, Instagram, YouTube, LinkedIn, and Threads.",
     "bot2_f1": "Weekly trend reports for your niche",
@@ -110,7 +107,6 @@
     "bot2_f6": "You choose which networks and niche to follow",
     "bot2_price": "$49 USD/mo",
     "bot2_setup": "Setup $99 USD",
-
     "bot3_title": "Audio → Social Media Bot",
     "bot3_desc": "Send an audio with what you want to communicate, and the bot transcribes it, formats it and publishes it automatically on your networks. The fastest way to create professional content.",
     "bot3_f1": "Audio transcription in seconds",
@@ -120,36 +116,30 @@
     "bot3_f5": "Publication history",
     "bot3_price": "$39 USD/mo",
     "bot3_setup": "Setup $79 USD",
-
     "custom_label": "Custom",
     "custom_title": "Need something specific?",
     "custom_subtitle": "If your business has unique needs, we design the solution from scratch.",
-
     "c1_title": "Scheduling & booking bot",
     "c1_desc": "Complete booking system with automatic confirmations, reminders and availability management. Ideal for clinics, offices and services.",
     "c1_price": "From $199 USD",
-
     "c2_title": "Process automations",
     "c2_desc": "We connect your existing tools and eliminate manual tasks. Zapier, Make, custom APIs — whatever you need.",
     "c2_price": "Custom quote",
     "c2_price_note": "Based on complexity and number of systems",
-
     "c3_title": "Customer service bot",
     "c3_desc": "Answer 80% of frequent queries without human intervention. Integrable with WhatsApp, Telegram, web and email.",
     "c3_price": "From $199 USD",
-
     "c4_title": "AI strategic consulting",
     "c4_desc": "Diagnostic session to identify automation opportunities in your business and an implementation roadmap.",
     "c4_price": "$25 USD",
     "c4_price_note": "Deliverables included in PDF",
-
     "pack_text": "Need multiple bots? We have special discount packs. Let's talk and put something together for you.",
     "pack_btn": "See pack options →",
-
     "cta_title": "Ready to automate?",
     "cta_subtitle": "Book a free 30-minute call and we'll show you exactly how AI can transform your business.",
     "cta_primary": "Book a free call →",
-    "cta_secondary": "Message us on Telegram"
+    "cta_secondary": "Message us on Telegram",
+    "free_call_note": "Free · 30 min"
   },
   "pricing_page": {
     "hero_label": "Pricing",
@@ -270,24 +260,19 @@
     "hero_title": "Let's talk about your business",
     "hero_subtitle": "Choose the channel you prefer. We respond in less than 24 hours.",
     "breadcrumb_home": "Home",
-
     "ch1_title": "Telegram",
     "ch1_desc": "The fastest way to reach us. We respond in minutes, 24 hours a day.",
     "ch1_schedule": "Available 24/7",
     "ch1_btn": "Open Telegram →",
-
     "ch2_title": "Email",
     "ch2_desc": "For detailed inquiries or if you prefer to have everything in writing. We respond in less than 24 hours.",
     "ch2_email": "hola@syneratechnologies.com",
     "ch2_btn": "Send email →",
-
     "ch3_title": "Google Meet",
     "ch3_desc": "Book a free 30-minute call. We'll show you exactly how we can help your business.",
     "ch3_badge": "Free · 30 minutes",
     "ch3_btn": "Check availability →",
-
     "channels_note": "Already a client? Message us on WhatsApp at the number we gave you when you signed up.",
-
     "form_title": "Send us a message",
     "form_subtitle": "Fill out the form and we'll get back to you in less than 24 hours.",
     "field_name": "Full name",
@@ -313,7 +298,6 @@
     "btn_sending": "Sending...",
     "success_msg": "Message sent! We'll get back to you soon.",
     "error_msg": "Something went wrong. Try again or contact us directly.",
-
     "info_hours_title": "Business hours",
     "info_hours_value": "24 hours, 7 days a week",
     "info_response_title": "Response time",
@@ -326,7 +310,6 @@
     "info_langs_title": "Languages",
     "info_langs_desc": "We support Spanish, English and Simplified Chinese.",
     "info_remote": "Synera Technologies operates 100% remotely from Uruguay and Taiwan.",
-
     "calendly_label": "Book a call",
     "calendly_title": "Choose a time that works for you",
     "calendly_subtitle": "Free 30-minute call on Google Meet. No commitment.",
@@ -337,7 +320,6 @@
     "hero_title": "The company behind the automations",
     "hero_subtitle": "We are a team specialized in AI applied to real businesses. We don't sell hype — we build solutions that work.",
     "breadcrumb_home": "Home",
-
     "history_label": "Our story",
     "history_title": "How we got here",
     "history_p1": "Synera was born from a simple question: why are businesses still doing manually what a machine can do better and faster?",
@@ -349,7 +331,6 @@
     "metric2_label": "Average delivery time",
     "metric3_value": "24/7",
     "metric3_label": "Bot availability",
-
     "team_label": "Team",
     "team_title": "The people behind Synera",
     "team_subtitle": "A small, focused team with real experience in AI and automation.",
@@ -374,7 +355,6 @@
     "member3_tag1": "Marketing",
     "member3_tag2": "Content",
     "member3_tag3": "Branding",
-
     "values_label": "Values",
     "values_title": "What guides us",
     "values_subtitle": "Four principles that define how we work and what kind of company we want to be.",
@@ -386,7 +366,6 @@
     "v3_desc": "Clear pricing, realistic timelines and direct communication. No empty promises, no surprises at the end.",
     "v4_title": "Continuous improvement",
     "v4_desc": "The day we stop learning is the day we stop being useful. We constantly iterate on what we build.",
-
     "cta_title": "Want to work with us?",
     "cta_subtitle": "If you have a project in mind or simply want to explore how AI can help your business, let's talk.",
     "cta_primary": "Contact us →",

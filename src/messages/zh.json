@@ -81,7 +81,6 @@
     "hero_title": "适合每种需求的AI解决方案",
     "hero_subtitle": "从即用型机器人到完全定制的自动化。找到您的业务所需。",
     "breadcrumb_home": "首页",
-
     "bots_label": "即用产品",
     "bots_title": "今天就可以购买的机器人",
     "bots_subtitle": "经过验证、随时可激活的解决方案。无需定制开发，无需长时间等待。",
@@ -89,7 +88,6 @@
     "price_label": "价格",
     "btn_hire": "购买此机器人",
     "btn_info": "查看详情 →",
-
     "bot1_title": "记账机器人",
     "bot1_desc": "发送文件，机器人自动整理到Google Drive，并将所有数据完整、有序地转录到Google Sheet。",
     "bot1_f1": "通过任何渠道接收文件",
@@ -99,7 +97,6 @@
     "bot1_f5": "全天候运行，无需人工干预",
     "bot1_price": "$69 USD/月",
     "bot1_setup": "安装费 $149 USD",
-
     "bot2_title": "内容创作者机器人",
     "bot2_desc": "每周收到您所选平台中您细分领域的最佳帖子和趋势报告：Twitter/X、TikTok、Instagram、YouTube、LinkedIn和Threads。",
     "bot2_f1": "每周细分领域趋势报告",
@@ -110,7 +107,6 @@
     "bot2_f6": "自定义选择关注的平台和细分领域",
     "bot2_price": "$49 USD/月",
     "bot2_setup": "安装费 $99 USD",
-
     "bot3_title": "音频→社交媒体机器人",
     "bot3_desc": "发送音频，机器人转录内容并自动发布到您的社交网络。创建专业内容的最快方式。",
     "bot3_f1": "秒级音频转录",
@@ -120,36 +116,30 @@
     "bot3_f5": "发布历史记录",
     "bot3_price": "$39 USD/月",
     "bot3_setup": "安装费 $79 USD",
-
     "custom_label": "定制",
     "custom_title": "需要特定解决方案？",
     "custom_subtitle": "如果您的业务有独特需求，我们从零开始设计解决方案。",
-
     "c1_title": "预约与预订机器人",
     "c1_desc": "完整预约系统，含自动确认、提醒和可用时间管理。适合诊所、事务所和服务业。",
     "c1_price": "起价 $199 USD",
-
     "c2_title": "流程自动化",
     "c2_desc": "连接您现有的工具，消除手动任务。Zapier、Make、自定义API——您需要什么就用什么。",
     "c2_price": "定制报价",
     "c2_price_note": "根据复杂性和系统数量",
-
     "c3_title": "客户服务机器人",
     "c3_desc": "无需人工干预即可回答80%的常见咨询。可集成WhatsApp、Telegram、网站和邮件。",
     "c3_price": "起价 $199 USD",
-
     "c4_title": "AI战略咨询",
     "c4_desc": "诊断会议，识别业务中的自动化机会并制定实施路线图。",
     "c4_price": "$25 USD",
     "c4_price_note": "包含PDF可交付成果",
-
     "pack_text": "需要多个机器人？我们有特别折扣套餐。联系我们，为您量身定制。",
     "pack_btn": "查看套餐选项 →",
-
     "cta_title": "准备好自动化了吗？",
     "cta_subtitle": "预约30分钟免费通话，我们将向您展示AI如何改变您的业务。",
     "cta_primary": "预约免费通话 →",
-    "cta_secondary": "通过Telegram联系我们"
+    "cta_secondary": "通过Telegram联系我们",
+    "free_call_note": "免费 · 30分钟"
   },
   "pricing_page": {
     "hero_label": "价格",
@@ -270,24 +260,19 @@
     "hero_title": "让我们谈谈您的业务",
     "hero_subtitle": "选择您偏好的联系方式。我们在24小时内回复。",
     "breadcrumb_home": "首页",
-
     "ch1_title": "Telegram",
     "ch1_desc": "联系我们最快的方式。全天24小时，我们几分钟内回复。",
     "ch1_schedule": "全天候 24/7",
     "ch1_btn": "打开 Telegram →",
-
     "ch2_title": "电子邮件",
     "ch2_desc": "适合详细咨询或您偏好书面沟通的情况。我们在24小时内回复。",
     "ch2_email": "hola@syneratechnologies.com",
     "ch2_btn": "发送邮件 →",
-
     "ch3_title": "Google Meet",
     "ch3_desc": "预约30分钟免费通话。我们将向您展示如何帮助您的业务。",
     "ch3_badge": "免费 · 30分钟",
     "ch3_btn": "查看可用时间 →",
-
     "channels_note": "已经是客户？请通过我们在签约时提供给您的WhatsApp号码联系我们。",
-
     "form_title": "给我们发消息",
     "form_subtitle": "填写表单，我们将在24小时内回复您。",
     "field_name": "全名",
@@ -313,7 +298,6 @@
     "btn_sending": "发送中...",
     "success_msg": "消息已发送！我们很快会回复您。",
     "error_msg": "出现错误。请重试或直接联系我们。",
-
     "info_hours_title": "工作时间",
     "info_hours_value": "全天24小时，每周7天",
     "info_response_title": "响应时间",
@@ -326,7 +310,6 @@
     "info_langs_title": "语言",
     "info_langs_desc": "我们支持西班牙语、英语和简体中文。",
     "info_remote": "Synera Technologies 从乌拉圭和台湾100%远程运营。",
-
     "calendly_label": "预约通话",
     "calendly_title": "选择适合您的时间",
     "calendly_subtitle": "通过Google Meet进行30分钟免费通话。无需承诺。",
@@ -337,7 +320,6 @@
     "hero_title": "自动化背后的公司",
     "hero_subtitle": "我们是一支专注于将AI应用于真实业务的团队。我们不卖噱头——我们构建真正有效的解决方案。",
     "breadcrumb_home": "首页",
-
     "history_label": "我们的故事",
     "history_title": "我们如何走到今天",
     "history_p1": "Synera源于一个简单的问题：为什么企业仍在手动完成机器能做得更好更快的任务？",
@@ -349,7 +331,6 @@
     "metric2_label": "平均交付时间",
     "metric3_value": "24/7",
     "metric3_label": "机器人可用性",
-
     "team_label": "团队",
     "team_title": "Synera背后的人",
     "team_subtitle": "一支小而精的团队，在AI和自动化领域拥有真实的实践经验。",
@@ -374,7 +355,6 @@
     "member3_tag1": "营销",
     "member3_tag2": "内容",
     "member3_tag3": "品牌",
-
     "values_label": "价值观",
     "values_title": "我们的指导原则",
     "values_subtitle": "四个原则定义了我们的工作方式和我们想成为的公司类型。",
@@ -386,7 +366,6 @@
     "v3_desc": "价格清晰、时间表真实、沟通直接。没有空洞的承诺，没有最后的惊喜。",
     "v4_title": "持续改进",
     "v4_desc": "停止学习的那天，也是我们停止有用的那天。我们不断迭代我们所构建的一切。",
-
     "cta_title": "想与我们合作？",
     "cta_subtitle": "如果您有想法，或者只是想探索AI如何帮助您的业务，让我们聊聊。",
     "cta_primary": "联系我们 →",
