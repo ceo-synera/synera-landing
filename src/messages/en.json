@@ -392,6 +392,14 @@
     "cta_primary": "Contact us →",
     "cta_secondary": "Message us on Telegram"
   },
+  "legal": {
+    "privacy_title": "Privacy Policy",
+    "terms_title": "Terms and Conditions",
+    "refunds_title": "Refund Policy",
+    "last_updated": "Last updated: January 2025",
+    "table_of_contents": "Contents",
+    "back_to_home": "Home"
+  },
   "footer": {
     "rights": "All rights reserved",
     "tagline": "Built with AI, for those who use AI"

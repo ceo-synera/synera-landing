@@ -392,6 +392,14 @@
     "cta_primary": "Contactanos →",
     "cta_secondary": "Escribinos por Telegram"
   },
+  "legal": {
+    "privacy_title": "Política de Privacidad",
+    "terms_title": "Términos y Condiciones",
+    "refunds_title": "Política de Reembolsos",
+    "last_updated": "Última actualización: Enero 2025",
+    "table_of_contents": "Contenido",
+    "back_to_home": "Inicio"
+  },
   "footer": {
     "rights": "Todos los derechos reservados",
     "tagline": "Hecho con IA, para quienes usan IA"

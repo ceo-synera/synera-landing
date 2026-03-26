@@ -167,13 +167,18 @@ export default function Footer() {
             <h4 className="text-sm font-semibold mb-4 text-white">Legal</h4>
             <ul className="space-y-2 text-sm text-gray-400">
               <li>
-                <Link href={localePath("/privacy")} className="hover:text-white transition-colors">
+                <Link href={localePath("/legal/privacy")} className="hover:text-white transition-colors">
                   Privacidad
                 </Link>
               </li>
               <li>
-                <Link href={localePath("/terms")} className="hover:text-white transition-colors">
+                <Link href={localePath("/legal/terms")} className="hover:text-white transition-colors">
                   Términos
+                </Link>
+              </li>
+              <li>
+                <Link href={localePath("/legal/refunds")} className="hover:text-white transition-colors">
+                  Reembolsos
                 </Link>
               </li>
             </ul>

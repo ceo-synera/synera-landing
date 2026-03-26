@@ -392,6 +392,14 @@
     "cta_primary": "联系我们 →",
     "cta_secondary": "通过Telegram联系我们"
   },
+  "legal": {
+    "privacy_title": "隐私政策",
+    "terms_title": "条款和条件",
+    "refunds_title": "退款政策",
+    "last_updated": "最后更新：2025年1月",
+    "table_of_contents": "目录",
+    "back_to_home": "首页"
+  },
   "footer": {
     "rights": "版权所有",
     "tagline": "用AI构建，为AI用户服务"
