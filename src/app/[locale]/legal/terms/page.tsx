@@ -139,8 +139,8 @@ function getContent(locale: string): {
               <UL>
                 <LI>
                   Email:{" "}
-                  <a href="mailto:hola@syneratechnologies.com" className="text-accent hover:underline">
-                    hola@syneratechnologies.com
+                  <a href="mailto:legal@syneratechnologies.com" className="text-accent hover:underline">
+                    legal@syneratechnologies.com
                   </a>
                 </LI>
                 <LI>Telegram: @syneratech_bot</LI>
@@ -273,8 +273,8 @@ function getContent(locale: string): {
               <UL>
                 <LI>
                   电子邮件：{" "}
-                  <a href="mailto:hola@syneratechnologies.com" className="text-accent hover:underline">
-                    hola@syneratechnologies.com
+                  <a href="mailto:legal@syneratechnologies.com" className="text-accent hover:underline">
+                    legal@syneratechnologies.com
                   </a>
                 </LI>
                 <LI>Telegram：@syneratech_bot</LI>
@@ -415,8 +415,8 @@ function getContent(locale: string): {
             <UL>
               <LI>
                 Email:{" "}
-                <a href="mailto:hola@syneratechnologies.com" className="text-accent hover:underline">
-                  hola@syneratechnologies.com
+                <a href="mailto:legal@syneratechnologies.com" className="text-accent hover:underline">
+                  legal@syneratechnologies.com
                 </a>
               </LI>
               <LI>Telegram: @syneratech_bot</LI>

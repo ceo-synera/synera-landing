@@ -134,10 +134,10 @@ function getContent(locale: string): {
               <P>
                 To exercise these rights, contact us at{" "}
                 <a
-                  href="mailto:hola@syneratechnologies.com"
+                  href="mailto:legal@syneratechnologies.com"
                   className="text-accent hover:underline"
                 >
-                  hola@syneratechnologies.com
+                  legal@syneratechnologies.com
                 </a>
               </P>
             </>
@@ -180,10 +180,10 @@ function getContent(locale: string): {
                 <LI>
                   Email:{" "}
                   <a
-                    href="mailto:hola@syneratechnologies.com"
+                    href="mailto:legal@syneratechnologies.com"
                     className="text-accent hover:underline"
                   >
-                    hola@syneratechnologies.com
+                    legal@syneratechnologies.com
                   </a>
                 </LI>
                 <LI>Telegram: @syneratech_bot</LI>
@@ -305,10 +305,10 @@ function getContent(locale: string): {
               <P>
                 请通过{" "}
                 <a
-                  href="mailto:hola@syneratechnologies.com"
+                  href="mailto:legal@syneratechnologies.com"
                   className="text-accent hover:underline"
                 >
-                  hola@syneratechnologies.com
+                  legal@syneratechnologies.com
                 </a>{" "}
                 联系我们行使这些权利。
               </P>
@@ -347,10 +347,10 @@ function getContent(locale: string): {
                 <LI>
                   电子邮件：{" "}
                   <a
-                    href="mailto:hola@syneratechnologies.com"
+                    href="mailto:legal@syneratechnologies.com"
                     className="text-accent hover:underline"
                   >
-                    hola@syneratechnologies.com
+                    legal@syneratechnologies.com
                   </a>
                 </LI>
                 <LI>Telegram：@syneratech_bot</LI>
@@ -487,10 +487,10 @@ function getContent(locale: string): {
             <P>
               Para ejercer estos derechos, contactanos en{" "}
               <a
-                href="mailto:hola@syneratechnologies.com"
+                href="mailto:legal@syneratechnologies.com"
                 className="text-accent hover:underline"
               >
-                hola@syneratechnologies.com
+                legal@syneratechnologies.com
               </a>
             </P>
           </>
@@ -533,10 +533,10 @@ function getContent(locale: string): {
               <LI>
                 Email:{" "}
                 <a
-                  href="mailto:hola@syneratechnologies.com"
+                  href="mailto:legal@syneratechnologies.com"
                   className="text-accent hover:underline"
                 >
-                  hola@syneratechnologies.com
+                  legal@syneratechnologies.com
                 </a>
               </LI>
               <LI>Telegram: @syneratech_bot</LI>

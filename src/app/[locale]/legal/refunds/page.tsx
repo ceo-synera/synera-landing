@@ -88,10 +88,10 @@ function getContent(locale: string): {
               <P>
                 Contact us at{" "}
                 <a
-                  href="mailto:hola@syneratechnologies.com"
+                  href="mailto:support@syneratechnologies.com"
                   className="text-accent hover:underline"
                 >
-                  hola@syneratechnologies.com
+                  support@syneratechnologies.com
                 </a>{" "}
                 with:
               </P>
@@ -187,10 +187,10 @@ function getContent(locale: string): {
               <P>
                 通过{" "}
                 <a
-                  href="mailto:hola@syneratechnologies.com"
+                  href="mailto:support@syneratechnologies.com"
                   className="text-accent hover:underline"
                 >
-                  hola@syneratechnologies.com
+                  support@syneratechnologies.com
                 </a>{" "}
                 联系我们，并提供：
               </P>
@@ -293,10 +293,10 @@ function getContent(locale: string): {
             <P>
               Contactanos en{" "}
               <a
-                href="mailto:hola@syneratechnologies.com"
+                href="mailto:support@syneratechnologies.com"
                 className="text-accent hover:underline"
               >
-                hola@syneratechnologies.com
+                support@syneratechnologies.com
               </a>{" "}
               con:
             </P>

@@ -68,8 +68,8 @@ export async function POST(req: NextRequest) {
 
   try {
     await resend.emails.send({
-      from: "Synera Technologies <hola@syneratechnologies.com>",
-      to: "hola@syneratechnologies.com",
+      from: `Synera Technologies <${process.env.RESEND_FROM_EMAIL}>`,
+      to: process.env.RESEND_TO_EMAIL!,
       replyTo: email,
       subject: `Nuevo contacto desde syneratechnologies.com — ${name}`,
       html,
