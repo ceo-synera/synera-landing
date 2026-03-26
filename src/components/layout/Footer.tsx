@@ -81,17 +81,17 @@ export default function Footer() {
             <h4 className="text-sm font-semibold mb-4 text-white">Productos</h4>
             <ul className="space-y-2 text-sm text-gray-400">
               <li>
-                <Link href={localePath("/services")} className="hover:text-white transition-colors">
+                <Link href={localePath("/services/bot-contable")} className="hover:text-white transition-colors">
                   Bot Contable
                 </Link>
               </li>
               <li>
-                <Link href={localePath("/services")} className="hover:text-white transition-colors">
+                <Link href={localePath("/services/bot-redes")} className="hover:text-white transition-colors">
                   Bot Creadores
                 </Link>
               </li>
               <li>
-                <Link href={localePath("/services")} className="hover:text-white transition-colors">
+                <Link href={localePath("/services/bot-audio")} className="hover:text-white transition-colors">
                   Bot Audio→RRSS
                 </Link>
               </li>
