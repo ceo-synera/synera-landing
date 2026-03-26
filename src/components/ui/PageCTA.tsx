@@ -46,7 +46,7 @@ export function PageCTA({
         </div>
 
         <div
-          className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto"
+          className="flex flex-col sm:flex-row items-start gap-4 w-full sm:w-auto"
           style={fadeStyle(0.15)}
         >
           <div className="flex flex-col items-center gap-1 w-full sm:w-auto">
