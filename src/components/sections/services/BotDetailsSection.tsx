@@ -196,6 +196,7 @@ export default function BotDetailsSection() {
       description: t("bot2_desc"),
       features: [t("bot2_f1"), t("bot2_f2"), t("bot2_f3"), t("bot2_f4"), t("bot2_f5"), t("bot2_f6")],
       price: t("bot2_price"),
+      setup: t("bot2_setup"),
       blogHref: `/${locale}/services/bot-redes`,
     },
     {

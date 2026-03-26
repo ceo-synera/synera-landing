@@ -121,7 +121,10 @@ function MonthlyCard({
 
 interface OneTimeCardProps {
   name: string;
-  priceNote: string;
+  price: string;
+  period?: string;
+  priceNote?: string;
+  badge?: string;
   desc: string;
   features: string[];
   buttonLabel: string;
@@ -131,7 +134,10 @@ interface OneTimeCardProps {
 
 function OneTimeCard({
   name,
+  price,
+  period,
   priceNote,
+  badge,
   desc,
   features,
   buttonLabel,
@@ -148,10 +154,18 @@ function OneTimeCard({
           {name}
         </span>
 
-        {/* Price placeholder */}
         <div className="flex flex-col gap-1">
-          <span className="font-sora text-5xl font-bold text-primary leading-none">—</span>
-          <span className="text-xs text-muted font-light">{priceNote}</span>
+          <span className="font-sora text-4xl font-bold text-primary leading-none">{price}</span>
+          {period && <span className="text-sm text-muted font-light">{period}</span>}
+          {priceNote && <span className="text-xs text-muted font-light">{priceNote}</span>}
+          {badge && (
+            <span
+              className="self-start mt-1 text-[11px] font-semibold uppercase tracking-widest px-2.5 py-1 rounded-full"
+              style={{ backgroundColor: "#E1F5EE", color: "#1D9E75" }}
+            >
+              {badge}
+            </span>
+          )}
         </div>
 
         <p className="text-sm text-muted font-light leading-relaxed">{desc}</p>
@@ -213,7 +227,7 @@ export default function PricingPlans() {
           <div className="tab-fade-in grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
             <MonthlyCard
               name={t("plan1_name")}
-              price={t("price_tbd")}
+              price={t("plan1_price")}
               priceMonth={t("price_month")}
               desc={t("plan1_desc")}
               features={[
@@ -229,7 +243,7 @@ export default function PricingPlans() {
             />
             <MonthlyCard
               name={t("plan2_name")}
-              price={t("price_tbd")}
+              price={t("plan2_price")}
               priceMonth={t("price_month")}
               desc={t("plan2_desc")}
               features={[
@@ -268,9 +282,10 @@ export default function PricingPlans() {
 
         {/* ── One-time cards ── */}
         {tab === "one_time" && (
-          <div className="tab-fade-in grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
+          <div className="tab-fade-in grid grid-cols-1 md:grid-cols-3 gap-6">
             <OneTimeCard
               name={t("ot1_name")}
+              price={t("ot1_price")}
               priceNote={t("ot1_price_note")}
               desc={t("ot1_desc")}
               features={[t("ot1_f1"), t("ot1_f2"), t("ot1_f3"), t("ot1_f4")]}
@@ -280,6 +295,7 @@ export default function PricingPlans() {
             />
             <OneTimeCard
               name={t("ot2_name")}
+              price={t("ot2_price")}
               priceNote={t("ot2_price_note")}
               desc={t("ot2_desc")}
               features={[
@@ -292,6 +308,17 @@ export default function PricingPlans() {
               buttonLabel={t("btn_call")}
               buttonHref="https://cal.com/syneratechnologies/llamada-synera-30-min"
               style={fadeStyle(0.16)}
+            />
+            <OneTimeCard
+              name={t("ot3_name")}
+              price={t("ot3_price")}
+              period={t("ot3_period")}
+              badge={t("ot3_badge")}
+              desc={t("ot3_desc")}
+              features={[t("ot3_f1"), t("ot3_f2"), t("ot3_f3"), t("ot3_f4"), t("ot3_f5")]}
+              buttonLabel={t("ot3_btn")}
+              buttonHref={`/${locale}/contact`}
+              style={fadeStyle(0.24)}
             />
           </div>
         )}

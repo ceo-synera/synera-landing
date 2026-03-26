@@ -76,10 +76,11 @@ interface CustomCardProps {
   title: string;
   description: string;
   price: string;
+  priceNote?: string;
   style?: React.CSSProperties;
 }
 
-function CustomCard({ icon, iconColor, iconBg, title, description, price, style }: CustomCardProps) {
+function CustomCard({ icon, iconColor, iconBg, title, description, price, priceNote, style }: CustomCardProps) {
   return (
     <div
       className="bg-white rounded-2xl border border-border-light p-6 flex flex-col gap-4 group cursor-default"
@@ -106,12 +107,17 @@ function CustomCard({ icon, iconColor, iconBg, title, description, price, style 
         <p className="text-sm text-muted font-light leading-relaxed">{description}</p>
       </div>
 
-      <span
-        className="self-start text-xs font-semibold px-3 py-1.5 rounded-full"
-        style={{ backgroundColor: "#E6F1FB", color: "#185FA5" }}
-      >
-        {price}
-      </span>
+      <div className="flex flex-col gap-1 self-start">
+        <span
+          className="self-start text-xs font-semibold px-3 py-1.5 rounded-full"
+          style={{ backgroundColor: "#E6F1FB", color: "#185FA5" }}
+        >
+          {price}
+        </span>
+        {priceNote && (
+          <span className="text-[11px] text-muted font-light pl-0.5">{priceNote}</span>
+        )}
+      </div>
     </div>
   );
 }
@@ -145,6 +151,7 @@ export default function CustomSection() {
       title: t("c2_title"),
       description: t("c2_desc"),
       price: t("c2_price"),
+      priceNote: t("c2_price_note"),
     },
     {
       icon: <ChatIcon />,
@@ -161,6 +168,7 @@ export default function CustomSection() {
       title: t("c4_title"),
       description: t("c4_desc"),
       price: t("c4_price"),
+      priceNote: t("c4_price_note"),
     },
   ];
 

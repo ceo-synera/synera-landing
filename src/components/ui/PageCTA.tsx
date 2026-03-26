@@ -7,6 +7,7 @@ interface PageCTAProps {
   subtitle: string;
   primaryLabel: string;
   primaryHref: string;
+  primaryNote?: string;
   secondaryLabel: string;
   secondaryHref: string;
 }
@@ -16,6 +17,7 @@ export function PageCTA({
   subtitle,
   primaryLabel,
   primaryHref,
+  primaryNote,
   secondaryLabel,
   secondaryHref,
 }: PageCTAProps) {
@@ -47,12 +49,19 @@ export function PageCTA({
           className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto"
           style={fadeStyle(0.15)}
         >
-          <a
-            href={primaryHref}
-            className="bg-white text-primary font-semibold text-sm px-7 py-3.5 rounded-lg hover:bg-gray-100 transition-colors w-full sm:w-auto text-center"
-          >
-            {primaryLabel}
-          </a>
+          <div className="flex flex-col items-center gap-1 w-full sm:w-auto">
+            <a
+              href={primaryHref}
+              className="bg-white text-primary font-semibold text-sm px-7 py-3.5 rounded-lg hover:bg-gray-100 transition-colors w-full sm:w-auto text-center"
+            >
+              {primaryLabel}
+            </a>
+            {primaryNote && (
+              <span className="text-xs font-light" style={{ color: "rgba(255,255,255,0.45)" }}>
+                {primaryNote}
+              </span>
+            )}
+          </div>
           <a
             href={secondaryHref}
             className="text-white font-medium text-sm px-7 py-3.5 rounded-lg w-full sm:w-auto text-center transition-colors hover:bg-white/5"

@@ -38,8 +38,8 @@ const botData: AllData = {
       tagline: "Automatización documental con Google Drive y Sheets",
       description:
         "Le mandás un documento y el bot lo organiza automáticamente en Google Drive y transcribe todos los datos a un Google Sheet con la información completa y ordenada. Sin cargas manuales, sin errores, sin demoras.",
-      price: "$49 USD/mes",
-      setup: "Setup $99 USD",
+      price: "$69 USD/mes",
+      setup: "Setup $149 USD",
       features: [
         "Recibe documentos por cualquier canal (WhatsApp, Telegram, email)",
         "Organiza archivos en Google Drive automáticamente",
@@ -89,8 +89,8 @@ const botData: AllData = {
       tagline: "Document automation with Google Drive and Sheets",
       description:
         "Send a document and the bot automatically organizes it in Google Drive and transcribes all the data to a Google Sheet with complete, structured information. No manual entry, no errors, no delays.",
-      price: "$49 USD/mo",
-      setup: "Setup $99 USD",
+      price: "$69 USD/mo",
+      setup: "Setup $149 USD",
       features: [
         "Receives documents through any channel (WhatsApp, Telegram, email)",
         "Organizes files in Google Drive automatically",
@@ -140,8 +140,8 @@ const botData: AllData = {
       tagline: "通过Google Drive和Sheets实现文档自动化",
       description:
         "发送文件，机器人自动整理到Google Drive，并将所有数据完整、有序地转录到Google Sheet。无需手动录入，无错误，无延迟。",
-      price: "$49 USD/月",
-      setup: "安装费 $99 USD",
+      price: "$69 USD/月",
+      setup: "安装费 $149 USD",
       features: [
         "通过任何渠道接收文件（WhatsApp、Telegram、邮件）",
         "自动将文件整理到Google Drive",
@@ -194,7 +194,8 @@ const botData: AllData = {
       tagline: "Reportes semanales de tendencias en 6 plataformas",
       description:
         "Recibís cada semana un reporte con los mejores posts y tendencias de tu nicho en las redes que elijas: Twitter/X, TikTok, Instagram, YouTube, LinkedIn y Threads. Siempre al día, sin perder horas scrolleando.",
-      price: "$25 USD/mes",
+      price: "$49 USD/mes",
+      setup: "Setup $99 USD",
       features: [
         "Reportes semanales de tendencias de tu nicho",
         "Cobertura de Twitter/X, TikTok e Instagram",
@@ -245,7 +246,8 @@ const botData: AllData = {
       tagline: "Weekly trend reports across 6 platforms",
       description:
         "Get a weekly report with the best posts and trends in your niche across the networks you choose: Twitter/X, TikTok, Instagram, YouTube, LinkedIn, and Threads. Always up to date, without losing hours scrolling.",
-      price: "$25 USD/mo",
+      price: "$49 USD/mo",
+      setup: "Setup $99 USD",
       features: [
         "Weekly trend reports for your niche",
         "Covers Twitter/X, TikTok, and Instagram",
@@ -296,7 +298,8 @@ const botData: AllData = {
       tagline: "覆盖6个平台的每周趋势报告",
       description:
         "每周收到您所选平台中您细分领域的最佳帖子和趋势报告：Twitter/X、TikTok、Instagram、YouTube、LinkedIn和Threads。始终保持最新，无需花几小时刷屏。",
-      price: "$25 USD/月",
+      price: "$49 USD/月",
+      setup: "安装费 $99 USD",
       features: [
         "每周细分领域趋势报告",
         "覆盖Twitter/X、TikTok和Instagram",
@@ -350,8 +353,8 @@ const botData: AllData = {
       tagline: "De tu voz a LinkedIn en segundos",
       description:
         "Mandás un audio con lo que querés comunicar, y el bot lo transcribe, lo formatea y lo publica automáticamente en tus redes. La forma más rápida de crear contenido profesional sin escribir ni una palabra.",
-      price: "$29 USD/mes",
-      setup: "Setup $49 USD",
+      price: "$39 USD/mes",
+      setup: "Setup $79 USD",
       features: [
         "Transcripción de audio en segundos",
         "Publicación automática en LinkedIn",
@@ -401,8 +404,8 @@ const botData: AllData = {
       tagline: "From your voice to LinkedIn in seconds",
       description:
         "Send an audio with what you want to communicate, and the bot transcribes it, formats it and publishes it automatically on your networks. The fastest way to create professional content without writing a single word.",
-      price: "$29 USD/mo",
-      setup: "Setup $49 USD",
+      price: "$39 USD/mo",
+      setup: "Setup $79 USD",
       features: [
         "Audio transcription in seconds",
         "Automatic posting on LinkedIn",
@@ -452,8 +455,8 @@ const botData: AllData = {
       tagline: "从您的声音到LinkedIn，只需几秒",
       description:
         "发送音频，机器人转录内容、格式化并自动发布到您的社交网络。无需写一个字，创建专业内容的最快方式。",
-      price: "$29 USD/月",
-      setup: "安装费 $49 USD",
+      price: "$39 USD/月",
+      setup: "安装费 $79 USD",
       features: [
         "秒级音频转录",
         "自动发布到LinkedIn",
