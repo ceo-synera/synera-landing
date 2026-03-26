@@ -49,6 +49,13 @@ export async function generateMetadata({
 
   return {
     metadataBase: new URL("https://syneratechnologies.com"),
+    icons: {
+      icon: [
+        { url: "/favicon.svg", type: "image/svg+xml" },
+        { url: "/icon", type: "image/png", sizes: "32x32" },
+      ],
+      apple: [{ url: "/apple-icon", type: "image/png", sizes: "180x180" }],
+    },
     title: {
       default: titles[loc],
       template: "%s | Synera Technologies",
