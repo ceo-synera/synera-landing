@@ -22,6 +22,7 @@ const dmSans = DM_Sans({
 const locales = ["es", "en", "zh"];
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://syneratechnologies.com"),
   title: "Synera Technologies",
   description: "Automatización con inteligencia artificial para tu negocio",
 };

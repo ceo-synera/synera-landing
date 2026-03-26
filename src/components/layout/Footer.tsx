@@ -44,7 +44,7 @@ export default function Footer() {
             {/* Contact icons */}
             <div className="flex items-center gap-3 mt-5">
               <a
-                href="https://t.me/syneratechnologies"
+                href="https://t.me/syneratech_bot"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-8 h-8 rounded-lg bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors"
@@ -151,7 +151,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://linkedin.com/company/syneratechnologies"
+                  href="https://www.linkedin.com/company/synera-technologies"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-white transition-colors"

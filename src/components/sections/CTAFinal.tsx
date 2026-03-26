@@ -11,9 +11,9 @@ export default function CTAFinal() {
       title={t("title")}
       subtitle={t("subtitle")}
       primaryLabel={t("primary")}
-      primaryHref="#calendly"
+      primaryHref="https://cal.com/syneratechnologies/30min"
       secondaryLabel={t("secondary")}
-      secondaryHref="#telegram"
+      secondaryHref="https://t.me/syneratech_bot"
     />
   );
 }

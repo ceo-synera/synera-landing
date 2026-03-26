@@ -1,21 +1,9 @@
 "use client";
 
+import { useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { useInView } from "@/hooks/useInView";
 import { SectionLabel } from "@/components/ui/SectionLabel";
-
-function CalendarBigIcon() {
-  return (
-    <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-      <rect x="6" y="10" width="36" height="32" rx="4" stroke="#d0cec8" strokeWidth="2" />
-      <line x1="6" y1="20" x2="42" y2="20" stroke="#d0cec8" strokeWidth="2" />
-      <line x1="15" y1="6" x2="15" y2="14" stroke="#d0cec8" strokeWidth="2" strokeLinecap="round" />
-      <line x1="33" y1="6" x2="33" y2="14" stroke="#d0cec8" strokeWidth="2" strokeLinecap="round" />
-      <rect x="16" y="26" width="6" height="6" rx="1" fill="#d0cec8" />
-      <rect x="26" y="26" width="6" height="6" rx="1" fill="#d0cec8" />
-    </svg>
-  );
-}
 
 export default function CalendlySection() {
   const t = useTranslations("contact_page");
@@ -26,6 +14,28 @@ export default function CalendlySection() {
     transform: inView ? "translateY(0)" : "translateY(24px)",
     transition: `opacity 0.65s ease ${delay}s, transform 0.65s ease ${delay}s`,
   });
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://app.cal.com/embed/embed.js";
+    script.async = true;
+    script.onload = () => {
+      // @ts-ignore
+      Cal("init", "30min", {
+        origin: "https://cal.com",
+      });
+      // @ts-ignore
+      Cal("inline", {
+        elementOrSelector: "#cal-embed",
+        calLink: "syneratechnologies/30min",
+        layout: "month_view",
+      });
+    };
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   return (
     <section id="calendly" className="py-20 bg-surface border-t border-border-light">
@@ -41,28 +51,13 @@ export default function CalendlySection() {
           </p>
         </div>
 
-        {/* Embed placeholder */}
-        <div
-          id="calendly-embed"
-          className="bg-white border border-border-light rounded-2xl flex flex-col items-center justify-center gap-4 text-center px-6"
-          style={{ minHeight: 600, ...fadeStyle(0.1) }}
-        >
-          {/*
-           * TODO: Reemplazar este placeholder con el embed de Calendly
-           * 1. Crear cuenta en calendly.com
-           * 2. Crear evento "Llamada Synera - 30 min"
-           * 3. Reemplazar este div con:
-           * <div
-           *   className="calendly-inline-widget w-full"
-           *   data-url="https://calendly.com/TU-USUARIO/30min"
-           *   style={{ minWidth: 320, height: 630 }}
-           * />
-           * <Script src="https://assets.calendly.com/assets/external/widget.js" strategy="lazyOnload" />
-           */}
-          <CalendarBigIcon />
-          <p className="text-sm text-muted font-light max-w-sm leading-relaxed">
-            {t("calendly_placeholder")}
-          </p>
+        {/* Cal.com embed */}
+        <div style={fadeStyle(0.1)}>
+          <div
+            id="cal-embed"
+            className="bg-white border border-border-light rounded-2xl overflow-hidden"
+            style={{ minHeight: 600 }}
+          />
         </div>
       </div>
     </section>

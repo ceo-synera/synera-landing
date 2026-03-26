@@ -133,7 +133,7 @@ function BotDetailCard({
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row gap-3 mt-auto pt-4 border-t border-border-light">
           <a
-            href="#paypal"
+            href={`/${locale}/contact`}
             className="flex-1 text-center text-sm font-semibold px-5 py-3 rounded-lg transition-opacity hover:opacity-90 text-white"
             style={{ backgroundColor: accentColor }}
           >

@@ -129,7 +129,7 @@ export default function ContactChannels() {
             description={t("ch1_desc")}
             meta={<span className="text-muted font-light">{t("ch1_schedule")}</span>}
             btnLabel={t("ch1_btn")}
-            btnHref="https://t.me/syneratech"
+            btnHref="https://t.me/syneratech_bot"
             btnStyle="accent"
             style={fadeStyle(0)}
           />
@@ -163,7 +163,7 @@ export default function ContactChannels() {
               </span>
             }
             btnLabel={t("ch3_btn")}
-            btnHref="#calendly"
+            btnHref="https://cal.com/syneratechnologies/30min"
             btnStyle="teal"
             style={fadeStyle(0.2)}
           />
