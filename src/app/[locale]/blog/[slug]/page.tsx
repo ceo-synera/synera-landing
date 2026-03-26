@@ -91,6 +91,13 @@ export async function generateMetadata({
     openGraph: {
       title: post.title,
       description: post.excerpt,
+      images: [{ url: "/opengraph-image.png", width: 1200, height: 630 }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.excerpt,
+      images: ["/opengraph-image.png"],
     },
   };
 }
