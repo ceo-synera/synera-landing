@@ -21,9 +21,7 @@ export default function CalendlySection() {
     script.async = true;
     script.onload = () => {
       // @ts-ignore
-      Cal("init", "30min", {
-        origin: "https://cal.com",
-      });
+      Cal("init", { origin: "https://cal.com" });
       // @ts-ignore
       Cal("inline", {
         elementOrSelector: "#cal-embed",
@@ -51,14 +49,12 @@ export default function CalendlySection() {
           </p>
         </div>
 
-        {/* Cal.com embed */}
-        <div style={fadeStyle(0.1)}>
-          <div
-            id="cal-embed"
-            className="bg-white border border-border-light rounded-2xl overflow-hidden"
-            style={{ minHeight: 600 }}
-          />
-        </div>
+        {/* Cal.com embed — no fade wrapper so Cal renders in a visible container */}
+        <div
+          id="cal-embed"
+          className="bg-white border border-border-light rounded-2xl overflow-hidden"
+          style={{ minHeight: 600 }}
+        />
       </div>
     </section>
   );
