@@ -88,7 +88,7 @@
     "available": "Disponible ahora",
     "price_label": "Precio",
     "btn_hire": "Contratar este bot",
-    "btn_info": "Leer artículo →",
+    "btn_info": "Ver detalles →",
 
     "bot1_title": "Bot Contable",
     "bot1_desc": "Te mandamos un documento y el bot lo organiza automáticamente en Google Drive y transcribe todos los datos a un Google Sheet con la información completa y ordenada.",

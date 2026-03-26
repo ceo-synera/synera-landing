@@ -88,7 +88,7 @@
     "available": "立即可用",
     "price_label": "价格",
     "btn_hire": "购买此机器人",
-    "btn_info": "阅读文章 →",
+    "btn_info": "查看详情 →",
 
     "bot1_title": "记账机器人",
     "bot1_desc": "发送文件，机器人自动整理到Google Drive，并将所有数据完整、有序地转录到Google Sheet。",

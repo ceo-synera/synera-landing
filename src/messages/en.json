@@ -88,7 +88,7 @@
     "available": "Available now",
     "price_label": "Price",
     "btn_hire": "Hire this bot",
-    "btn_info": "Read article →",
+    "btn_info": "See details →",
 
     "bot1_title": "Accounting Bot",
     "bot1_desc": "Send a document and the bot automatically organizes it in Google Drive and transcribes all the data to a Google Sheet with complete, structured information.",

@@ -72,6 +72,8 @@ interface BotDetailCardProps {
   title: string;
   description: string;
   features: string[];
+  price: string;
+  setup?: string;
   btnHire: string;
   btnInfo: string;
   blogHref: string;
@@ -87,6 +89,8 @@ function BotDetailCard({
   title,
   description,
   features,
+  price,
+  setup,
   btnHire,
   btnInfo,
   blogHref,
@@ -118,6 +122,14 @@ function BotDetailCard({
         <div>
           <h3 className="font-sora font-bold text-primary text-xl mb-2">{title}</h3>
           <p className="text-sm text-muted font-light leading-relaxed">{description}</p>
+        </div>
+
+        {/* Price */}
+        <div className="flex items-baseline gap-2 py-3 border-y border-border-light">
+          <span className="font-sora font-bold text-2xl text-primary">{price}</span>
+          {setup && (
+            <span className="text-xs text-muted font-light">· {setup}</span>
+          )}
         </div>
 
         {/* Features */}
@@ -172,7 +184,9 @@ export default function BotDetailsSection() {
       title: t("bot1_title"),
       description: t("bot1_desc"),
       features: [t("bot1_f1"), t("bot1_f2"), t("bot1_f3"), t("bot1_f4"), t("bot1_f5")],
-      blogHref: `/${locale}/blog/bot-contable`,
+      price: t("bot1_price"),
+      setup: t("bot1_setup"),
+      blogHref: `/${locale}/services/bot-contable`,
     },
     {
       icon: <CreatorIcon color="#1D9E75" />,
@@ -180,8 +194,9 @@ export default function BotDetailsSection() {
       accentColor: "#1D9E75",
       title: t("bot2_title"),
       description: t("bot2_desc"),
-      features: [t("bot2_f1"), t("bot2_f2"), t("bot2_f3"), t("bot2_f4"), t("bot2_f5")],
-      blogHref: `/${locale}/blog/bot-creadores`,
+      features: [t("bot2_f1"), t("bot2_f2"), t("bot2_f3"), t("bot2_f4"), t("bot2_f5"), t("bot2_f6")],
+      price: t("bot2_price"),
+      blogHref: `/${locale}/services/bot-redes`,
     },
     {
       icon: <MicIcon color="#BA7517" />,
@@ -190,7 +205,9 @@ export default function BotDetailsSection() {
       title: t("bot3_title"),
       description: t("bot3_desc"),
       features: [t("bot3_f1"), t("bot3_f2"), t("bot3_f3"), t("bot3_f4"), t("bot3_f5")],
-      blogHref: `/${locale}/blog/bot-audio-redes`,
+      price: t("bot3_price"),
+      setup: t("bot3_setup"),
+      blogHref: `/${locale}/services/bot-audio`,
     },
   ];
 
