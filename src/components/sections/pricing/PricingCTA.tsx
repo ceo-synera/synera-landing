@@ -14,7 +14,7 @@ export default function PricingCTA() {
       primaryHref="https://cal.com/syneratechnologies/llamada-synera-30-min"
       primaryNote={t("free_call_note")}
       secondaryLabel={t("cta_secondary")}
-      secondaryHref="https://t.me/syneratech_bot"
+      secondaryHref="https://wa.me/886981980019"
     />
   );
 }

@@ -13,7 +13,7 @@ export default function CTAFinal() {
       primaryLabel={t("primary")}
       primaryHref="https://cal.com/syneratechnologies/llamada-synera-30-min"
       secondaryLabel={t("secondary")}
-      secondaryHref="https://t.me/syneratech_bot"
+      secondaryHref="https://wa.me/886981980019"
     />
   );
 }

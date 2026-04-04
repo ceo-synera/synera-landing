@@ -14,7 +14,7 @@ export default function AboutCTA() {
       primaryLabel={t("cta_primary")}
       primaryHref={`/${locale}/contact`}
       secondaryLabel={t("cta_secondary")}
-      secondaryHref="https://t.me/syneratech_bot"
+      secondaryHref="https://wa.me/886981980019"
     />
   );
 }

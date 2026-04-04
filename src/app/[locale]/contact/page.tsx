@@ -10,9 +10,9 @@ const titles: Record<string, string> = {
 };
 
 const descriptions: Record<string, string> = {
-  es: "Contactanos por Telegram, email o agendá una llamada gratuita de 30 minutos. Respondemos en menos de 24 horas.",
-  en: "Contact us via Telegram, email or schedule a free 30-minute call. We respond in less than 24 hours.",
-  zh: "通过Telegram、电子邮件联系我们或预约30分钟免费通话。我们在24小时内回复。",
+  es: "Contactanos por WhatsApp, email o agendá una llamada gratuita de 30 minutos. Respondemos en menos de 24 horas.",
+  en: "Contact us via WhatsApp, email or schedule a free 30-minute call. We respond in less than 24 hours.",
+  zh: "通过WhatsApp、电子邮件联系我们或预约30分钟免费通话。我们在24小时内回复。",
 };
 
 export async function generateMetadata({
