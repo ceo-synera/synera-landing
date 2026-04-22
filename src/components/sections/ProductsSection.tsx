@@ -130,17 +130,10 @@ interface ServiceCardProps {
 }
 
 function ServiceCard({ icon, iconBg, iconColor, title, description, href, isExternal, style }: ServiceCardProps) {
-  const Tag = isExternal ? "a" : Link;
-  const extraProps = isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {};
+  const className = "group bg-white rounded-2xl border border-border-light p-6 flex flex-col gap-4 hover:border-accent hover:shadow-md transition-all duration-200";
 
-  return (
-    // @ts-expect-error – polymorphic tag
-    <Tag
-      href={href}
-      {...extraProps}
-      className="group bg-white rounded-2xl border border-border-light p-6 flex flex-col gap-4 hover:border-accent hover:shadow-md transition-all duration-200"
-      style={style}
-    >
+  const inner = (
+    <>
       <div className="w-10 h-10 rounded-xl flex items-center justify-center" style={{ backgroundColor: iconBg, color: iconColor }}>
         {icon}
       </div>
@@ -151,7 +144,21 @@ function ServiceCard({ icon, iconBg, iconColor, title, description, href, isExte
       <span className="flex items-center gap-1.5 text-xs font-medium text-accent opacity-0 group-hover:opacity-100 transition-opacity duration-200">
         Ver más <ArrowIcon />
       </span>
-    </Tag>
+    </>
+  );
+
+  if (isExternal) {
+    return (
+      <a href={href} target="_blank" rel="noopener noreferrer" className={className} style={style}>
+        {inner}
+      </a>
+    );
+  }
+
+  return (
+    <Link href={href} className={className} style={style}>
+      {inner}
+    </Link>
   );
 }
 
@@ -180,7 +187,7 @@ export default function ProductsSection() {
       icon: <ChatIcon color="#1D9E75" />,
       iconBg: "#E1F5EE",
       iconColor: "#1D9E75",
-      title: "Bots personalizados",
+      title: "Soluciones a medida",
       description: "Atención al cliente, agendamiento, onboarding y seguimiento de ventas. Integrables con WhatsApp, web y cualquier herramienta que ya uses.",
       href: `/${locale}/services`,
     },
