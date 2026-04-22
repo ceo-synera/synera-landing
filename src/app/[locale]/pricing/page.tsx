@@ -1,19 +1,15 @@
-import PricingHero from "@/components/sections/pricing/PricingHero";
-import PricingPlans from "@/components/sections/pricing/PricingPlans";
-import PacksBlock from "@/components/sections/pricing/PacksBlock";
-import PricingFAQ from "@/components/sections/pricing/PricingFAQ";
-import PricingCTA from "@/components/sections/pricing/PricingCTA";
+import HowWeWorkPage from "@/components/sections/pricing/HowWeWorkPage";
 
 const titles: Record<string, string> = {
-  es: "Precios — Planes simples y transparentes",
-  en: "Pricing — Simple and Transparent Plans",
-  zh: "价格 — 简单透明的套餐",
+  es: "¿Cómo trabajamos? — Synera Technologies",
+  en: "How We Work — Synera Technologies",
+  zh: "我们如何工作 — Synera Technologies",
 };
 
 const descriptions: Record<string, string> = {
-  es: "Planes de suscripción mensual y proyectos únicos. Sin contratos largos ni costos ocultos. Elegí el plan que se adapta a tu negocio.",
-  en: "Monthly subscription plans and one-time projects. No long contracts or hidden costs. Choose the plan that fits your business.",
-  zh: "月度订阅计划和一次性项目。无长期合同，无隐藏费用。选择适合您业务的计划。",
+  es: "Cada proyecto es diferente. Agendá una llamada gratuita y te contamos exactamente cómo podemos ayudarte.",
+  en: "Every project is different. Book a free call and we'll tell you exactly how we can help you.",
+  zh: "每个项目都不同。预约免费通话，我们将告诉您如何帮助您。",
 };
 
 export async function generateMetadata({
@@ -35,13 +31,5 @@ export async function generateMetadata({
 }
 
 export default function PricingPage() {
-  return (
-    <>
-      <PricingHero />
-      <PricingPlans />
-      <PacksBlock />
-      <PricingFAQ />
-      <PricingCTA />
-    </>
-  );
+  return <HowWeWorkPage />;
 }

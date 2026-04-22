@@ -1,4 +1,5 @@
 import ServicesHero from "@/components/sections/services/ServicesHero";
+import SyneraPortalSection from "@/components/sections/services/SyneraPortalSection";
 import IndustriesSection from "@/components/sections/services/IndustriesSection";
 import CustomSection from "@/components/sections/services/CustomSection";
 import ServicesCTA from "@/components/sections/services/ServicesCTA";
@@ -37,6 +38,7 @@ export default function ServicesPage() {
   return (
     <>
       <ServicesHero />
+      <SyneraPortalSection />
       <IndustriesSection />
       <CustomSection />
       <ServicesCTA />
