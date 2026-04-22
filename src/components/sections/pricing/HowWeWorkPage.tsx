@@ -105,7 +105,7 @@ export default function HowWeWorkPage() {
     },
     {
       question: "¿La llamada inicial realmente es gratis?",
-      answer: "Sí, sin truco. No es un pitch de ventas: es una sesión de diagnóstico donde entendemos si podemos ayudarte y cómo. Si no ves valor, no hay ningún compromiso.",
+      answer: "Sí, completamente. Es una sesión de diagnóstico donde entendemos tu negocio y exploramos juntos qué es posible. Si no encontramos fit, te lo decimos con honestidad. Sin presiones.",
     },
     {
       question: "¿Cuánto tiempo tarda un proyecto típico?",
@@ -133,10 +133,10 @@ export default function HowWeWorkPage() {
           </nav>
           <SectionLabel color="accent">El proceso</SectionLabel>
           <h1 className="font-sora text-4xl sm:text-5xl font-bold text-primary max-w-2xl leading-tight">
-            Sin precios fijos. Con propuestas reales.
+            Cada negocio merece una solución pensada para él
           </h1>
           <p className="text-muted font-light text-lg leading-relaxed max-w-xl">
-            Cada negocio es distinto. Por eso no ponemos tarifas genéricas: primero entendemos tu caso y después te decimos qué y cuánto.
+            No creemos en paquetes genéricos. Empezamos por entender tu operación y diseñamos algo que realmente tenga sentido para vos.
           </p>
           <a
             href="https://cal.com/syneratechnologies/llamada-synera-30-min"
@@ -184,10 +184,10 @@ export default function HowWeWorkPage() {
       <section className="py-16 bg-primary">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center gap-6">
           <h2 className="font-sora text-3xl font-bold text-white leading-tight">
-            La única forma de saber cuánto cuesta es hablando
+            Tu próximo gran salto empieza con una conversación
           </h2>
           <p className="text-white/60 font-light leading-relaxed">
-            30 minutos son suficientes para entender tu operación y darte una propuesta concreta. Sin vueltas.
+            En 30 minutos entendemos tu operación y te mostramos qué es posible. Sin compromiso, con claridad.
           </p>
           <div className="flex flex-wrap gap-3 justify-center">
             <a
