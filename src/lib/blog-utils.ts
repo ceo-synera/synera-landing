@@ -35,11 +35,6 @@ const CATEGORY_COLORS: Record<string, { bg: string; text: string }> = {
   "Use cases": { bg: "#E1F5EE", text: "#1D9E75" },
   Tutorials: { bg: "#F3E8FF", text: "#7C3AED" },
   News: { bg: "#FEF3C7", text: "#D97706" },
-  自动化: { bg: "#E6F1FB", text: "#185FA5" },
-  机器人: { bg: "#FAEEDA", text: "#BA7517" },
-  案例研究: { bg: "#E1F5EE", text: "#1D9E75" },
-  教程: { bg: "#F3E8FF", text: "#7C3AED" },
-  新闻: { bg: "#FEF3C7", text: "#D97706" },
 };
 
 export function getCategoryColor(category: string): { bg: string; text: string } {
@@ -51,7 +46,6 @@ export function formatDate(dateStr: string, locale: string): string {
   const localeMap: Record<string, string> = {
     es: "es-UY",
     en: "en-US",
-    zh: "zh-CN",
   };
   return date.toLocaleDateString(localeMap[locale] ?? "en-US", {
     year: "numeric",

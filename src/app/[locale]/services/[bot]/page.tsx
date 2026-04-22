@@ -132,57 +132,6 @@ const botData: AllData = {
       btnBack: "← Back to services",
       available: "Available now",
     },
-    zh: {
-      slug: "bot-contable",
-      accentColor: "#185FA5",
-      headerBg: "#E6F1FB",
-      title: "记账机器人",
-      tagline: "通过Google Drive和Sheets实现文档自动化",
-      description:
-        "发送文件，机器人自动整理到Google Drive，并将所有数据完整、有序地转录到Google Sheet。无需手动录入，无错误，无延迟。",
-      price: "$69 USD/月",
-      setup: "安装费 $149 USD",
-      features: [
-        "通过任何渠道接收文件（WhatsApp、Telegram、邮件）",
-        "自动将文件整理到Google Drive",
-        "将数据完整转录到Google Sheet",
-        "按文件类型智能分类",
-        "全天候运行，无需人工干预",
-      ],
-      howTitle: "工作原理",
-      steps: [
-        {
-          title: "发送文件",
-          desc: "通过您使用的渠道发送发票、收据、账单或任何文件：WhatsApp、Telegram、邮件或表单。",
-        },
-        {
-          title: "机器人分析",
-          desc: "使用人工智能自动提取文件中的姓名、金额、日期、类别和所有关键数据。",
-        },
-        {
-          title: "Drive和Sheet更新",
-          desc: "文件保存在Google Drive的正确文件夹中，数据在几秒内转录到Google Sheet。",
-        },
-      ],
-      benefitsTitle: "为什么选择它",
-      benefits: [
-        {
-          title: "零手动数据录入",
-          desc: "消除手动输入的数小时工作和人为错误风险。",
-        },
-        {
-          title: "一切井然有序",
-          desc: "您的文件始终在Google Drive的正确位置。几秒内找到任何文件。",
-        },
-        {
-          title: "与您已有工具集成",
-          desc: "直接与Google Drive和Sheets配合使用。无需学习新工具。",
-        },
-      ],
-      btnHire: "购买此机器人",
-      btnBack: "← 返回服务",
-      available: "立即可用",
-    },
   },
 
   "bot-redes": {
@@ -290,58 +239,6 @@ const botData: AllData = {
       btnBack: "← Back to services",
       available: "Available now",
     },
-    zh: {
-      slug: "bot-redes",
-      accentColor: "#1D9E75",
-      headerBg: "#E1F5EE",
-      title: "内容创作者机器人",
-      tagline: "覆盖6个平台的每周趋势报告",
-      description:
-        "每周收到您所选平台中您细分领域的最佳帖子和趋势报告：Twitter/X、TikTok、Instagram、YouTube、LinkedIn和Threads。始终保持最新，无需花几小时刷屏。",
-      price: "$49 USD/月",
-      setup: "安装费 $99 USD",
-      features: [
-        "每周细分领域趋势报告",
-        "覆盖Twitter/X、TikTok和Instagram",
-        "分析YouTube、LinkedIn和Threads",
-        "精选本周最佳帖子",
-        "直接发送到您的邮箱或Telegram",
-        "自定义选择关注的平台和细分领域",
-      ],
-      howTitle: "工作原理",
-      steps: [
-        {
-          title: "设置您的细分领域",
-          desc: "告诉我们您想专注的行业或细分领域，以及您想监控的社交平台。",
-        },
-        {
-          title: "机器人分析本周内容",
-          desc: "监控6个平台，选择您细分领域中互动率、覆盖率和相关性最高的帖子。",
-        },
-        {
-          title: "接收报告",
-          desc: "每周报告发送到您的邮箱或Telegram，包含精彩内容，随时激发灵感。",
-        },
-      ],
-      benefitsTitle: "为什么选择它",
-      benefits: [
-        {
-          title: "始终领先行业动态",
-          desc: "在竞争对手之前了解您细分领域的内容趋势，无需花费数小时研究。",
-        },
-        {
-          title: "持续获得灵感",
-          desc: "永远不缺创意。每份报告都是话题、格式和趋势的来源。",
-        },
-        {
-          title: "6个平台一站汇总",
-          desc: "Twitter/X、TikTok、Instagram、YouTube、LinkedIn和Threads，一份清晰的周报搞定。",
-        },
-      ],
-      btnHire: "购买此机器人",
-      btnBack: "← 返回服务",
-      available: "立即可用",
-    },
   },
 
   "bot-audio": {
@@ -447,57 +344,6 @@ const botData: AllData = {
       btnBack: "← Back to services",
       available: "Available now",
     },
-    zh: {
-      slug: "bot-audio",
-      accentColor: "#BA7517",
-      headerBg: "#FAEEDA",
-      title: "音频→社交媒体机器人",
-      tagline: "从您的声音到LinkedIn，只需几秒",
-      description:
-        "发送音频，机器人转录内容、格式化并自动发布到您的社交网络。无需写一个字，创建专业内容的最快方式。",
-      price: "$39 USD/月",
-      setup: "安装费 $79 USD",
-      features: [
-        "秒级音频转录",
-        "自动发布到LinkedIn",
-        "文本适配社交媒体格式",
-        "即将上线：Instagram、Twitter/X、Facebook",
-        "发布历史记录",
-      ],
-      howTitle: "工作原理",
-      steps: [
-        {
-          title: "录制音频",
-          desc: "录制一条语音消息，内容随意：一个想法、一个公告、一次分享，任何内容都可以。",
-        },
-        {
-          title: "机器人转录并适配",
-          desc: "转录音频，校正文本，并以目标社交平台的理想风格和语气进行格式化。",
-        },
-        {
-          title: "自动发布",
-          desc: "帖子自动发布到您的LinkedIn（即将支持更多平台），无需您做任何其他操作。",
-        },
-      ],
-      benefitsTitle: "为什么选择它",
-      benefits: [
-        {
-          title: "无需写作的专业内容",
-          desc: "几秒内将任何想法变成精致的帖子。您只需说话，机器人完成其余工作。",
-        },
-        {
-          title: "轻松保持社交一致性",
-          desc: "定期发布而不牺牲时间。更多数字存在感，更少手动工作。",
-        },
-        {
-          title: "您的声音，您的信息",
-          desc: "机器人保留您的沟通方式。结果听起来自然，不像机器生成的。",
-        },
-      ],
-      btnHire: "购买此机器人",
-      btnBack: "← 返回服务",
-      available: "立即可用",
-    },
   },
 };
 
@@ -551,17 +397,14 @@ const metaTitles: Record<string, Record<string, string>> = {
   "bot-contable": {
     es: "Bot Contable — Automatización con Google Drive y Sheets",
     en: "Accounting Bot — Automation with Google Drive and Sheets",
-    zh: "记账机器人 — Google Drive和Sheets自动化",
   },
   "bot-redes": {
     es: "Bot Creadores — Reportes semanales de tendencias",
     en: "Content Creator Bot — Weekly Trend Reports",
-    zh: "内容创作者机器人 — 每周趋势报告",
   },
   "bot-audio": {
     es: "Bot Audio → Redes — Publicá con tu voz",
     en: "Audio → Social Bot — Publish with Your Voice",
-    zh: "音频→社交机器人 — 用声音发布内容",
   },
 };
 
@@ -586,7 +429,7 @@ export async function generateMetadata({
 }
 
 export function generateStaticParams() {
-  const locales = ["es", "en", "zh"];
+  const locales = ["es", "en"];
   const bots = ["bot-contable", "bot-redes", "bot-audio"];
   return locales.flatMap((locale) => bots.map((bot) => ({ locale, bot })));
 }
@@ -619,11 +462,11 @@ export default async function BotPage({
           {/* Breadcrumb */}
           <nav className="flex items-center gap-2 text-sm text-muted mb-8 flex-wrap">
             <Link href={`/${locale}`} className="hover:text-primary transition-colors">
-              {locale === "zh" ? "首页" : locale === "en" ? "Home" : "Inicio"}
+              {locale === "en" ? "Home" : "Inicio"}
             </Link>
             <span>/</span>
             <Link href={`/${locale}/services`} className="hover:text-primary transition-colors">
-              {locale === "zh" ? "服务" : locale === "en" ? "Services" : "Servicios"}
+              {locale === "en" ? "Services" : "Servicios"}
             </Link>
             <span>/</span>
             <span className="text-primary font-medium">{d.title}</span>
@@ -687,7 +530,7 @@ export default async function BotPage({
         {/* ── What's included ── */}
         <section>
           <h2 className="font-sora font-bold text-2xl text-primary mb-6">
-            {locale === "zh" ? "包含内容" : locale === "en" ? "What's included" : "Qué incluye"}
+            {locale === "en" ? "What's included" : "Qué incluye"}
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {d.features.map((f) => (
@@ -745,16 +588,10 @@ export default async function BotPage({
         >
           <div>
             <h3 className="font-sora font-bold text-primary text-xl mb-1">
-              {locale === "zh"
-                ? `准备好使用${d.title}了吗？`
-                : locale === "en"
-                ? `Ready to use ${d.title}?`
-                : `¿Listo para usar el ${d.title}?`}
+              {locale === "en" ? `Ready to use ${d.title}?` : `¿Listo para usar el ${d.title}?`}
             </h3>
             <p className="text-sm text-muted font-light">
-              {locale === "zh"
-                ? "联系我们，我们将在24小时内配置好您的机器人。"
-                : locale === "en"
+              {locale === "en"
                 ? "Contact us and we'll have your bot set up within 24 hours."
                 : "Contactanos y en 24 horas tenés tu bot configurado y funcionando."}
             </p>

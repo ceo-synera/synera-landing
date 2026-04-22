@@ -2,7 +2,7 @@ import { getAllPosts } from "@/lib/blog";
 import { MetadataRoute } from "next";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const locales = ["es", "en", "zh"];
+  const locales = ["es", "en"];
   const baseUrl = "https://syneratechnologies.com";
 
   const staticPages = ["", "/about", "/services", "/pricing", "/contact", "/blog"];

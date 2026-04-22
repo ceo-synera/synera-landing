@@ -5,13 +5,11 @@ import BlogClient from "@/components/sections/blog/BlogClient";
 const titles: Record<string, string> = {
   es: "Blog — Ideas y casos de uso sobre IA",
   en: "Blog — AI Ideas and Use Cases",
-  zh: "博客 — AI创意和使用案例",
 };
 
 const descriptions: Record<string, string> = {
   es: "Artículos prácticos sobre automatización, bots e inteligencia artificial aplicada a negocios reales.",
   en: "Practical articles about automation, bots and artificial intelligence applied to real businesses.",
-  zh: "关于自动化、机器人和人工智能应用于实际业务的实用文章。",
 };
 
 export async function generateMetadata({

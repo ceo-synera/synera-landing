@@ -118,103 +118,6 @@ function getContent(locale: string): {
     };
   }
 
-  if (locale === "zh") {
-    return {
-      title: "退款政策",
-      lastUpdated: "最后更新：2025年1月",
-      tocLabel: "目录",
-      sections: [
-        {
-          id: "setup",
-          heading: "1. 安装费（一次性）",
-          content: (
-            <P>
-              一旦工作开始，安装费不予退款。如果您在我们开始开发前取消，可在付款后48小时内申请全额退款。
-            </P>
-          ),
-        },
-        {
-          id: "subscriptions",
-          heading: "2. 月度订阅",
-          content: (
-            <UL>
-              <LI>您可随时取消订阅</LI>
-              <LI>当月费用不予退款</LI>
-              <LI>取消适用于下一个计费周期</LI>
-              <LI>您在付费期结束前保留服务访问权限</LI>
-            </UL>
-          ),
-        },
-        {
-          id: "consulting",
-          heading: "3. 战略咨询",
-          content: (
-            <UL>
-              <LI>如果您提前24小时以上取消，退款100%</LI>
-              <LI>如果您在24小时内取消，不予退款</LI>
-              <LI>如果您无故缺席，不予退款</LI>
-            </UL>
-          ),
-        },
-        {
-          id: "custom",
-          heading: "4. 定制项目",
-          content: (
-            <>
-              <P>定制项目在服务合同中有其专属付款政策。一般而言：</P>
-              <UL>
-                <LI>一旦项目开始，首期款项（50%）不予退款</LI>
-                <LI>最终付款在交付时进行</LI>
-                <LI>如果Synera Technologies无法完成项目，将按比例退款</LI>
-              </UL>
-            </>
-          ),
-        },
-        {
-          id: "guarantee",
-          heading: "5. 满意保证",
-          content: (
-            <P>
-              如果交付的机器人或自动化程序未按提案规定运行，我们承诺在交付后30天内免费修复。
-            </P>
-          ),
-        },
-        {
-          id: "how-to-request",
-          heading: "6. 如何申请退款",
-          content: (
-            <>
-              <P>
-                通过{" "}
-                <a
-                  href="mailto:support@syneratechnologies.com"
-                  className="text-accent hover:underline"
-                >
-                  support@syneratechnologies.com
-                </a>{" "}
-                联系我们，并提供：
-              </P>
-              <UL>
-                <LI>您的姓名和注册邮箱</LI>
-                <LI>签约的服务</LI>
-                <LI>申请原因</LI>
-              </UL>
-              <P>我们在48个工作小时内回复。</P>
-            </>
-          ),
-        },
-        {
-          id: "processing",
-          heading: "7. 退款处理",
-          content: (
-            <P>
-              已批准的退款通过PayPal在5至10个工作日内处理。
-            </P>
-          ),
-        },
-      ],
-    };
-  }
 
   // Default: ES
   return {
@@ -328,13 +231,11 @@ function getContent(locale: string): {
 const metaTitles: Record<string, string> = {
   es: "Política de Reembolsos | Synera Technologies",
   en: "Refund Policy | Synera Technologies",
-  zh: "退款政策 | Synera Technologies",
 };
 
 const metaDescs: Record<string, string> = {
   es: "Política de reembolsos de Synera Technologies. Conocé las condiciones para setup, suscripciones, consultoría y proyectos custom.",
   en: "Synera Technologies refund policy. Learn the conditions for setup fees, subscriptions, consulting, and custom projects.",
-  zh: "Synera Technologies退款政策。了解安装费、订阅、咨询和定制项目的退款条件。",
 };
 
 export async function generateMetadata({
@@ -348,7 +249,7 @@ export async function generateMetadata({
 }
 
 export function generateStaticParams() {
-  return ["es", "en", "zh"].map((locale) => ({ locale }));
+  return ["es", "en"].map((locale) => ({ locale }));
 }
 
 // ── Page ──────────────────────────────────────────────────────────────────────
@@ -359,7 +260,7 @@ export default async function RefundsPage({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  if (!["es", "en", "zh"].includes(locale)) notFound();
+  if (!["es", "en"].includes(locale)) notFound();
 
   const content = getContent(locale);
 

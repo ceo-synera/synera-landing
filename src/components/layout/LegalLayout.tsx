@@ -48,7 +48,7 @@ export default function LegalLayout({
   sections,
 }: LegalLayoutProps) {
   const homeLabel =
-    locale === "zh" ? "首页" : locale === "en" ? "Home" : "Inicio";
+    locale === "en" ? "Home" : "Inicio";
 
   return (
     <div className="bg-white min-h-screen pt-24 pb-20">

@@ -152,140 +152,6 @@ function getContent(locale: string): {
     };
   }
 
-  if (locale === "zh") {
-    return {
-      title: "条款和条件",
-      lastUpdated: "最后更新：2025年1月",
-      tocLabel: "目录",
-      sections: [
-        {
-          id: "acceptance",
-          heading: "1. 条款接受",
-          content: (
-            <P>
-              使用Synera Technologies服务或我们的网站syneratechnologies.com，即表示您完全接受这些条款和条件。如果您不同意，请勿使用我们的服务。
-            </P>
-          ),
-        },
-        {
-          id: "services",
-          heading: "2. 服务说明",
-          content: (
-            <>
-              <P>Synera Technologies提供：</P>
-              <UL>
-                <LI>人工智能机器人的开发和实施</LI>
-                <LI>业务流程自动化</LI>
-                <LI>人工智能战略咨询</LI>
-                <LI>已实施解决方案的支持和维护</LI>
-              </UL>
-            </>
-          ),
-        },
-        {
-          id: "hiring",
-          heading: "3. 合同流程",
-          content: (
-            <UL>
-              <LI>服务通过书面协议或电子邮件确认进行签约</LI>
-              <LI>定制项目需要客户接受的正式提案</LI>
-              <LI>工作开始须支付安装费或第一期款项</LI>
-            </UL>
-          ),
-        },
-        {
-          id: "payments",
-          heading: "4. 价格和付款",
-          content: (
-            <UL>
-              <LI>所有价格以美元（USD）表示</LI>
-              <LI>通过PayPal进行付款</LI>
-              <LI>订阅从服务开始日期起每月收费</LI>
-              <LI>一旦工作开始，安装费不予退款</LI>
-            </UL>
-          ),
-        },
-        {
-          id: "ip",
-          heading: "5. 知识产权",
-          content: (
-            <UL>
-              <LI>全额付款后，开发的代码和解决方案归客户所有</LI>
-              <LI>Synera Technologies保留使用内部开发技术和方法论的权利</LI>
-              <LI>客户对已实施机器人处理的内容负责</LI>
-            </UL>
-          ),
-        },
-        {
-          id: "confidentiality",
-          heading: "6. 保密性",
-          content: (
-            <P>
-              我们承诺对服务提供过程中共享的所有客户业务信息保密。
-            </P>
-          ),
-        },
-        {
-          id: "liability",
-          heading: "7. 责任限制",
-          content: (
-            <UL>
-              <LI>Synera Technologies不对间接或后果性损失负责</LI>
-              <LI>我们的最大责任限于为相关服务支付的金额</LI>
-              <LI>我们不保证特定的业务成果，但承诺解决方案的技术质量</LI>
-            </UL>
-          ),
-        },
-        {
-          id: "modifications",
-          heading: "8. 服务变更",
-          content: (
-            <UL>
-              <LI>我们保留提前30天通知修改或停止服务的权利</LI>
-              <LI>价格变更适用于新合同，提前30天通知</LI>
-            </UL>
-          ),
-        },
-        {
-          id: "cancellation",
-          heading: "9. 取消",
-          content: (
-            <UL>
-              <LI>客户可随时取消订阅</LI>
-              <LI>取消适用于下一个计费周期</LI>
-              <LI>不对部分期间进行退款</LI>
-            </UL>
-          ),
-        },
-        {
-          id: "law",
-          heading: "10. 适用法律",
-          content: (
-            <P>本条款受乌拉圭东方共和国法律管辖。</P>
-          ),
-        },
-        {
-          id: "contact",
-          heading: "11. 联系方式",
-          content: (
-            <>
-              <P>关于本条款的问题：</P>
-              <UL>
-                <LI>
-                  电子邮件：{" "}
-                  <a href="mailto:legal@syneratechnologies.com" className="text-accent hover:underline">
-                    legal@syneratechnologies.com
-                  </a>
-                </LI>
-                <LI>Telegram：@syneratech_bot</LI>
-              </UL>
-            </>
-          ),
-        },
-      ],
-    };
-  }
-
   // Default: ES
   return {
     title: "Términos y Condiciones",
@@ -433,13 +299,11 @@ function getContent(locale: string): {
 const metaTitles: Record<string, string> = {
   es: "Términos y Condiciones | Synera Technologies",
   en: "Terms and Conditions | Synera Technologies",
-  zh: "条款和条件 | Synera Technologies",
 };
 
 const metaDescs: Record<string, string> = {
   es: "Términos y condiciones de uso de los servicios de Synera Technologies.",
   en: "Terms and conditions for using Synera Technologies services.",
-  zh: "Synera Technologies服务的使用条款和条件。",
 };
 
 export async function generateMetadata({
@@ -453,7 +317,7 @@ export async function generateMetadata({
 }
 
 export function generateStaticParams() {
-  return ["es", "en", "zh"].map((locale) => ({ locale }));
+  return ["es", "en"].map((locale) => ({ locale }));
 }
 
 // ── Page ──────────────────────────────────────────────────────────────────────
@@ -464,7 +328,7 @@ export default async function TermsPage({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  if (!["es", "en", "zh"].includes(locale)) notFound();
+  if (!["es", "en"].includes(locale)) notFound();
 
   const content = getContent(locale);
 

@@ -8,7 +8,6 @@ import { useTranslations, useLocale } from "next-intl";
 const localeLabels: Record<string, string> = {
   es: "ES",
   en: "EN",
-  zh: "ZH",
 };
 
 export default function Navbar() {

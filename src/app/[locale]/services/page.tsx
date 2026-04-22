@@ -5,15 +5,13 @@ import CustomSection from "@/components/sections/services/CustomSection";
 import ServicesCTA from "@/components/sections/services/ServicesCTA";
 
 const titles: Record<string, string> = {
-  es: "Servicios — Bots y Automatizaciones con IA",
-  en: "Services — AI Bots and Automations",
-  zh: "服务 — AI机器人和自动化",
+  es: "Servicios — Automatización con IA para tu industria",
+  en: "Services — AI Automation for Your Industry",
 };
 
 const descriptions: Record<string, string> = {
-  es: "Bot contable, bot para creadores de contenido, bot de audio a LinkedIn, bots de agenda y automatizaciones personalizadas para tu negocio.",
-  en: "Accounting bot, content creator bot, audio to LinkedIn bot, scheduling bots and custom automations for your business.",
-  zh: "会计机器人、内容创作者机器人、音频转LinkedIn机器人、预约机器人和定制自动化服务。",
+  es: "Synera Portal, automatizaciones por industria, soluciones a medida y consultoría estratégica de IA para tu negocio.",
+  en: "Synera Portal, industry automations, custom solutions and strategic AI consulting for your business.",
 };
 
 export async function generateMetadata({

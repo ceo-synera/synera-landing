@@ -20,24 +20,21 @@ const dmSans = DM_Sans({
   weight: ["300", "400", "500"],
 });
 
-const locales = ["es", "en", "zh"];
+const locales = ["es", "en"];
 
 const titles: Record<string, string> = {
   es: "Synera Technologies — Automatización con IA para tu negocio",
   en: "Synera Technologies — AI Automation for Your Business",
-  zh: "Synera Technologies — 为您的业务提供AI自动化",
 };
 
 const descriptions: Record<string, string> = {
-  es: "Creamos bots y automatizaciones con IA que trabajan 24/7 por tu negocio. Bot contable, bot para creadores de contenido, automatización de audio a redes sociales y más.",
-  en: "We build AI bots and automations that work 24/7 for your business. Accounting bot, content creator bot, audio to social media automation and more.",
-  zh: "我们构建全天候为您业务工作的AI机器人和自动化流程。会计机器人、内容创作者机器人、音频转社交媒体自动化等。",
+  es: "Creamos automatizaciones con IA que trabajan 24/7 por tu negocio. Soluciones a medida para cada industria, Synera Portal y consultoría estratégica.",
+  en: "We build AI automations that work 24/7 for your business. Custom solutions for every industry, Synera Portal and strategic consulting.",
 };
 
 const keywords: Record<string, string[]> = {
-  es: ["automatización IA", "bots inteligencia artificial", "chatbot negocio", "automatización contable", "bot LinkedIn", "Synera Technologies"],
-  en: ["AI automation", "business bots", "artificial intelligence", "chatbot", "Synera Technologies"],
-  zh: ["AI自动化", "智能机器人", "商业自动化", "Synera Technologies"],
+  es: ["automatización IA", "inteligencia artificial negocios", "check-in digital hotel", "Synera Portal", "Synera Technologies"],
+  en: ["AI automation", "business AI", "digital hotel check-in", "Synera Portal", "Synera Technologies"],
 };
 
 export async function generateMetadata({
@@ -70,12 +67,11 @@ export async function generateMetadata({
       languages: {
         es: "https://syneratechnologies.com/es",
         en: "https://syneratechnologies.com/en",
-        zh: "https://syneratechnologies.com/zh",
       },
     },
     openGraph: {
       type: "website",
-      locale: loc === "zh" ? "zh_CN" : loc === "es" ? "es_ES" : "en_US",
+      locale: loc === "es" ? "es_ES" : "en_US",
       url: `https://syneratechnologies.com/${loc}`,
       siteName: "Synera Technologies",
       title: titles[loc],
