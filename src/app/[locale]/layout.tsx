@@ -3,6 +3,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Analytics } from "@vercel/analytics/react";
+import Script from "next/script";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import "./globals.css";
@@ -125,6 +126,18 @@ export default async function LocaleLayout({
           <Footer />
         </NextIntlClientProvider>
         <Analytics />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-T3PTP84FJD"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-T3PTP84FJD');
+          `}
+        </Script>
       </body>
     </html>
   );
