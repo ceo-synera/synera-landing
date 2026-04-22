@@ -27,6 +27,21 @@ interface Industry {
 
 const industries: Industry[] = [
   {
+    id: "hoteleria",
+    emoji: "🏨",
+    name: "Hotelería",
+    description: "Operación fragmentada entre recepción, housekeeping y huéspedes. Mucha coordinación manual y tiempo perdido en tareas administrativas.",
+    automations: [
+      { tag: "Operación", title: "Check-in digital (Synera Portal)", description: "El huésped recibe un link, escanea su documento, firma digitalmente y completa el registro antes de llegar. Sin cola, sin papeles." },
+      { tag: "Operación", title: "Panel de housekeeping", description: "App para limpiadores: ven qué habitaciones están listas para limpiar según check-out confirmado y marcan el estado en tiempo real (limpiando / lista)." },
+      { tag: "Operación", title: "Coordinación automática de check-out", description: "Cuando se registra un check-out, se notifica automáticamente al equipo de housekeeping qué habitación limpiar y en qué orden según las nuevas entradas." },
+      { tag: "Ventas", title: "Comunicación automatizada con el huésped", description: "Mensajes de bienvenida, instrucciones de llegada, encuesta post-estadía y solicitud de reseña enviados automáticamente en el momento justo." },
+      { tag: "Ahorro", title: "Registro digital de mantenimiento", description: "El personal reporta incidencias desde el celular. Se genera la orden de trabajo automáticamente y queda el historial por habitación." },
+      { tag: "Ahorro", title: "Reportes de ocupación y limpieza", description: "Dashboard en tiempo real con estado de cada habitación: ocupada, en check-out, limpiando, lista. Visible para toda la operación sin llamadas ni radios." },
+    ],
+    benefits: ["Cero cola en recepción", "Housekeeping coordinado en tiempo real", "Mejor experiencia del huésped"],
+  },
+  {
     id: "marketing",
     emoji: "📣",
     name: "Marketing",
