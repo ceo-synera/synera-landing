@@ -27,7 +27,7 @@ export default function HowItWorks() {
         {/* Header */}
         <div className="flex flex-col items-center text-center gap-4 mb-14" style={fadeStyle(0)}>
           <SectionLabel color="accent">{t("label")}</SectionLabel>
-          <h2 className="font-sora text-3xl sm:text-4xl font-bold text-primary">
+          <h2 className="font-sora text-2xl sm:text-3xl lg:text-4xl font-bold text-primary">
             {t("title")}
           </h2>
           <p className="text-muted font-light text-lg max-w-xl leading-relaxed">

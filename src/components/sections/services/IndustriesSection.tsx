@@ -206,10 +206,10 @@ function IndustryCard({
   return (
     <button
       onClick={onClick}
-      className="group text-left bg-white rounded-2xl border border-border-light p-5 flex flex-col gap-3 hover:border-accent hover:shadow-md transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+      className="group text-left bg-white rounded-2xl border border-border-light p-4 sm:p-5 flex flex-col gap-3 hover:border-accent hover:shadow-md transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
     >
       <div className="flex items-start justify-between gap-2">
-        <span className="text-3xl leading-none">{industry.emoji}</span>
+        <span className="text-2xl sm:text-3xl leading-none">{industry.emoji}</span>
         <svg
           className="w-4 h-4 text-muted group-hover:text-accent group-hover:translate-x-0.5 transition-all duration-200 mt-1 shrink-0"
           viewBox="0 0 16 16"
@@ -219,10 +219,10 @@ function IndustryCard({
         </svg>
       </div>
       <div>
-        <h3 className="font-sora font-semibold text-primary text-base mb-1 group-hover:text-accent transition-colors duration-200">
+        <h3 className="font-sora font-semibold text-primary text-sm sm:text-base mb-1 group-hover:text-accent transition-colors duration-200">
           {industry.name}
         </h3>
-        <p className="text-xs text-muted font-light leading-relaxed line-clamp-2">
+        <p className="text-xs text-muted font-light leading-relaxed line-clamp-2 hidden sm:block">
           {industry.description}
         </p>
       </div>
@@ -306,7 +306,7 @@ function IndustryModal({
       <div className="relative z-10 bg-white w-full sm:max-w-2xl max-h-[92dvh] sm:max-h-[85vh] rounded-t-3xl sm:rounded-2xl flex flex-col overflow-hidden shadow-2xl">
 
         {/* Header */}
-        <div className="flex items-start gap-4 px-6 pt-6 pb-4 border-b border-border-light shrink-0">
+        <div className="flex items-start gap-3 sm:gap-4 px-4 sm:px-6 pt-5 sm:pt-6 pb-4 border-b border-border-light shrink-0">
           <span className="text-4xl leading-none">{industry.emoji}</span>
           <div className="flex-1 min-w-0">
             <h2 className="font-sora font-bold text-primary text-xl leading-tight">
@@ -328,7 +328,7 @@ function IndustryModal({
         </div>
 
         {/* Scrollable body */}
-        <div className="flex-1 overflow-y-auto px-6 py-5 flex flex-col gap-5">
+        <div className="flex-1 overflow-y-auto px-4 sm:px-6 py-4 sm:py-5 flex flex-col gap-4 sm:gap-5">
 
           {/* Automations grid */}
           <div>
@@ -365,7 +365,7 @@ function IndustryModal({
         </div>
 
         {/* Footer CTA */}
-        <div className="px-6 py-4 border-t border-border-light bg-white shrink-0">
+        <div className="px-4 sm:px-6 py-4 border-t border-border-light bg-white shrink-0">
           <a
             href={`/${locale}/contact`}
             className="block w-full text-center text-sm font-semibold px-5 py-3 rounded-xl bg-accent text-white hover:bg-accent-dark transition-colors"

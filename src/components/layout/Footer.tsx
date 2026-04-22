@@ -81,23 +81,28 @@ export default function Footer() {
             <h4 className="text-sm font-semibold mb-4 text-white">Productos</h4>
             <ul className="space-y-2 text-sm text-gray-400">
               <li>
-                <Link href={localePath("/services/bot-contable")} className="hover:text-white transition-colors">
-                  Bot Contable
-                </Link>
+                <a
+                  href="https://synera-portal.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors"
+                >
+                  Synera Portal
+                </a>
               </li>
               <li>
-                <Link href={localePath("/services/bot-redes")} className="hover:text-white transition-colors">
-                  Bot Creadores
-                </Link>
-              </li>
-              <li>
-                <Link href={localePath("/services/bot-audio")} className="hover:text-white transition-colors">
-                  Bot Audio→RRSS
+                <Link href={localePath("/services")} className="hover:text-white transition-colors">
+                  Automatizaciones
                 </Link>
               </li>
               <li>
                 <Link href={localePath("/services")} className="hover:text-white transition-colors">
-                  Bot de Agenda
+                  Soluciones a medida
+                </Link>
+              </li>
+              <li>
+                <Link href={localePath("/pricing")} className="hover:text-white transition-colors">
+                  ¿Cómo trabajamos?
                 </Link>
               </li>
             </ul>

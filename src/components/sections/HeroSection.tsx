@@ -6,7 +6,6 @@ import { useTranslations, useLocale } from "next-intl";
 const accentWords: Record<string, string> = {
   es: "automático",
   en: "autopilot",
-  zh: "自动运转",
 };
 
 function highlightTitle(title: string, locale: string) {
@@ -43,8 +42,8 @@ export default function HeroSection() {
 
   return (
     <section className="min-h-screen bg-white pt-16 flex items-center">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20 w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 lg:gap-16 items-center">
 
           {/* ── LEFT: content ── */}
           <div className="flex flex-col items-start gap-6">
@@ -58,12 +57,12 @@ export default function HeroSection() {
             </div>
 
             {/* H1 */}
-            <h1 className="animate-fade-up-1 font-sora text-4xl sm:text-5xl lg:text-5xl font-bold text-primary leading-tight">
+            <h1 className="animate-fade-up-1 font-sora text-3xl sm:text-4xl lg:text-5xl font-bold text-primary leading-tight">
               {highlightTitle(t("title"), locale)}
             </h1>
 
             {/* Subtitle */}
-            <p className="animate-fade-up-2 text-lg text-muted font-light leading-relaxed max-w-lg">
+            <p className="animate-fade-up-2 text-base sm:text-lg text-muted font-light leading-relaxed max-w-lg">
               {t("subtitle")}
             </p>
 

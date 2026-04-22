@@ -171,7 +171,7 @@ export default function CustomSection() {
 
         {/* Bottom note */}
         <div
-          className="rounded-2xl border px-7 py-6 flex flex-col sm:flex-row items-start sm:items-center gap-5"
+          className="rounded-2xl border px-4 sm:px-7 py-5 sm:py-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-5"
           style={{
             backgroundColor: "#E6F1FB",
             borderColor: "#185FA5",

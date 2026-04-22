@@ -124,25 +124,25 @@ export default function HowWeWorkPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-white pt-28 pb-16 border-b border-border-light">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center gap-6">
+      <section className="bg-white pt-24 pb-12 sm:pt-28 sm:pb-16 border-b border-border-light">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center gap-5 sm:gap-6">
           <nav className="flex items-center gap-2 text-xs text-muted" aria-label="breadcrumb">
             <Link href={`/${locale}`} className="hover:text-primary transition-colors">Inicio</Link>
             <span className="text-border-light">/</span>
             <span className="text-primary font-medium">¿Cómo trabajamos?</span>
           </nav>
           <SectionLabel color="accent">El proceso</SectionLabel>
-          <h1 className="font-sora text-4xl sm:text-5xl font-bold text-primary max-w-2xl leading-tight">
+          <h1 className="font-sora text-3xl sm:text-4xl lg:text-5xl font-bold text-primary max-w-2xl leading-tight">
             Cada negocio merece una solución pensada para él
           </h1>
-          <p className="text-muted font-light text-lg leading-relaxed max-w-xl">
+          <p className="text-muted font-light text-base sm:text-lg leading-relaxed max-w-sm sm:max-w-xl">
             No creemos en paquetes genéricos. Empezamos por entender tu operación y diseñamos algo que realmente tenga sentido para vos.
           </p>
           <a
             href="https://cal.com/syneratechnologies/llamada-synera-30-min"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-accent text-white font-semibold text-sm px-6 py-3.5 rounded-xl hover:bg-accent-dark transition-colors"
+            className="w-full sm:w-auto bg-accent text-white font-semibold text-sm px-6 py-3.5 rounded-xl hover:bg-accent-dark transition-colors"
           >
             Agendar llamada gratuita →
           </a>
@@ -151,11 +151,11 @@ export default function HowWeWorkPage() {
       </section>
 
       {/* Process steps */}
-      <section className="py-16 bg-surface border-b border-border-light">
+      <section className="py-12 sm:py-16 bg-surface border-b border-border-light">
         <div ref={ref} className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col items-center text-center gap-4 mb-12" style={fadeStyle(0)}>
+          <div className="flex flex-col items-center text-center gap-4 mb-10 sm:mb-12" style={fadeStyle(0)}>
             <SectionLabel color="teal">El proceso</SectionLabel>
-            <h2 className="font-sora text-3xl font-bold text-primary">Cómo es trabajar con nosotros</h2>
+            <h2 className="font-sora text-2xl sm:text-3xl font-bold text-primary">Cómo es trabajar con nosotros</h2>
           </div>
           <div style={fadeStyle(0.1)}>
             {steps.map((step) => (
@@ -166,13 +166,13 @@ export default function HowWeWorkPage() {
       </section>
 
       {/* Why no prices + FAQ */}
-      <section className="py-16 bg-white">
+      <section className="py-12 sm:py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col items-center text-center gap-4 mb-12">
+          <div className="flex flex-col items-center text-center gap-4 mb-10 sm:mb-12">
             <SectionLabel color="accent">Preguntas frecuentes</SectionLabel>
-            <h2 className="font-sora text-3xl font-bold text-primary">Lo que nos suelen preguntar</h2>
+            <h2 className="font-sora text-2xl sm:text-3xl font-bold text-primary">Lo que nos suelen preguntar</h2>
           </div>
-          <div className="bg-surface rounded-2xl border border-border-light px-7 py-2">
+          <div className="bg-surface rounded-2xl border border-border-light px-4 sm:px-7 py-2">
             {faqs.map((faq) => (
               <FAQ key={faq.question} {...faq} />
             ))}
@@ -181,20 +181,20 @@ export default function HowWeWorkPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-16 bg-primary">
-        <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center gap-6">
-          <h2 className="font-sora text-3xl font-bold text-white leading-tight">
+      <section className="py-12 sm:py-16 bg-primary">
+        <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center gap-5 sm:gap-6">
+          <h2 className="font-sora text-2xl sm:text-3xl font-bold text-white leading-tight">
             Tu próximo gran salto empieza con una conversación
           </h2>
-          <p className="text-white/60 font-light leading-relaxed">
+          <p className="text-white/60 font-light text-sm sm:text-base leading-relaxed">
             En 30 minutos entendemos tu operación y te mostramos qué es posible. Sin compromiso, con claridad.
           </p>
-          <div className="flex flex-wrap gap-3 justify-center">
+          <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto justify-center">
             <a
               href="https://cal.com/syneratechnologies/llamada-synera-30-min"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-accent text-white font-semibold text-sm px-6 py-3.5 rounded-xl hover:bg-accent-dark transition-colors"
+              className="w-full sm:w-auto text-center bg-accent text-white font-semibold text-sm px-6 py-3.5 rounded-xl hover:bg-accent-dark transition-colors"
             >
               Agendar llamada gratis →
             </a>
@@ -202,7 +202,7 @@ export default function HowWeWorkPage() {
               href="https://wa.me/886981980019"
               target="_blank"
               rel="noopener noreferrer"
-              className="border border-white/20 text-white font-semibold text-sm px-6 py-3.5 rounded-xl hover:bg-white/10 transition-colors"
+              className="w-full sm:w-auto text-center border border-white/20 text-white font-semibold text-sm px-6 py-3.5 rounded-xl hover:bg-white/10 transition-colors"
             >
               Escribir por WhatsApp
             </a>

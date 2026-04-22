@@ -80,7 +80,7 @@ export default function SyneraPortalSection() {
   return (
     <section className="py-16 bg-white border-t border-border-light">
       <div ref={ref} className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
 
           {/* Left: info */}
           <div className="flex flex-col gap-6" style={fadeStyle(0)}>
@@ -93,7 +93,7 @@ export default function SyneraPortalSection() {
             </div>
 
             <div>
-              <h2 className="font-sora text-3xl sm:text-4xl font-bold text-primary leading-tight mb-3">
+              <h2 className="font-sora text-2xl sm:text-3xl md:text-4xl font-bold text-primary leading-tight mb-3">
                 Synera Portal
               </h2>
               <p className="text-muted font-light text-lg leading-relaxed">

@@ -81,11 +81,11 @@ function ChannelCard({
       className="bg-white rounded-2xl border border-border-light overflow-hidden flex flex-col transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
       style={style}
     >
-      <div className="px-6 py-7 flex items-center gap-4" style={{ backgroundColor: headerBg }}>
+      <div className="px-5 py-5 sm:px-6 sm:py-7 flex items-center gap-3 sm:gap-4" style={{ backgroundColor: headerBg }}>
         {icon}
-        <h3 className="font-sora font-bold text-primary text-xl">{title}</h3>
+        <h3 className="font-sora font-bold text-primary text-lg sm:text-xl">{title}</h3>
       </div>
-      <div className="px-6 py-6 flex flex-col gap-4 flex-1">
+      <div className="px-5 py-5 sm:px-6 sm:py-6 flex flex-col gap-4 flex-1">
         <p className="text-sm text-muted font-light leading-relaxed">{description}</p>
         <div className="text-sm font-medium text-primary">{meta}</div>
         <a

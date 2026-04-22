@@ -58,7 +58,7 @@ function ArrowIcon() {
 function PortalCard({ style }: { style?: React.CSSProperties }) {
   return (
     <div
-      className="relative bg-primary rounded-2xl p-7 flex flex-col gap-5 overflow-hidden group"
+      className="relative bg-primary rounded-2xl p-5 sm:p-7 flex flex-col gap-5 overflow-hidden group"
       style={style}
     >
       {/* Background decoration */}
