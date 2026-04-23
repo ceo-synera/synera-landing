@@ -1,13 +1,13 @@
 import HowWeWorkPage from "@/components/sections/pricing/HowWeWorkPage";
 
 const titles: Record<string, string> = {
-  es: "¿Cómo trabajamos? — Synera Technologies",
-  en: "How We Work — Synera Technologies",
+  es: "¿Cómo implementamos automatización IA en tu empresa? | Synera Technologies",
+  en: "How We Implement AI Automation in Your Business | Synera Technologies",
 };
 
 const descriptions: Record<string, string> = {
-  es: "Cada proyecto es diferente. Agendá una llamada gratuita y te contamos exactamente cómo podemos ayudarte.",
-  en: "Every project is different. Book a free call and we'll tell you exactly how we can help you.",
+  es: "Llamada gratuita de diagnóstico, propuesta a medida y entrega en 1–3 semanas. Sin precios fijos: cada automatización se diseña según tu operación real.",
+  en: "Free diagnostic call, custom proposal and delivery in 1–3 weeks. No fixed prices: every automation is designed around your actual operation.",
 };
 
 export async function generateMetadata({

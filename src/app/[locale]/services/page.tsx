@@ -5,13 +5,13 @@ import CustomSection from "@/components/sections/services/CustomSection";
 import ServicesCTA from "@/components/sections/services/ServicesCTA";
 
 const titles: Record<string, string> = {
-  es: "Servicios — Automatización con IA para tu industria",
-  en: "Services — AI Automation for Your Industry",
+  es: "Servicios de Automatización con IA | Chatbots, Check-in Digital y Más",
+  en: "AI Automation Services | Chatbots, Digital Check-in and More",
 };
 
 const descriptions: Record<string, string> = {
-  es: "Synera Portal, automatizaciones por industria, soluciones a medida y consultoría estratégica de IA para tu negocio.",
-  en: "Synera Portal, industry automations, custom solutions and strategic AI consulting for your business.",
+  es: "Automatizamos tu negocio con IA: check-in digital para hoteles (Synera Portal), chatbots para WhatsApp, automatizaciones por industria y consultoría estratégica. Sin código, sin complicaciones.",
+  en: "We automate your business with AI: digital hotel check-in (Synera Portal), WhatsApp chatbots, industry automations and strategic consulting. No code, no complexity.",
 };
 
 export async function generateMetadata({

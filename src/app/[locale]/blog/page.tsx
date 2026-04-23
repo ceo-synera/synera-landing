@@ -3,13 +3,13 @@ import BlogHero from "@/components/sections/blog/BlogHero";
 import BlogClient from "@/components/sections/blog/BlogClient";
 
 const titles: Record<string, string> = {
-  es: "Blog — Ideas y casos de uso sobre IA",
-  en: "Blog — AI Ideas and Use Cases",
+  es: "Blog de Automatización con IA para Negocios | Synera Technologies",
+  en: "AI Automation Blog for Business | Synera Technologies",
 };
 
 const descriptions: Record<string, string> = {
-  es: "Artículos prácticos sobre automatización, bots e inteligencia artificial aplicada a negocios reales.",
-  en: "Practical articles about automation, bots and artificial intelligence applied to real businesses.",
+  es: "Guías, casos de uso y tutoriales prácticos sobre automatización de procesos, chatbots para WhatsApp, check-in digital y cómo implementar IA en tu negocio.",
+  en: "Guides, use cases and practical tutorials on process automation, WhatsApp chatbots, digital check-in and how to implement AI in your business.",
 };
 
 export async function generateMetadata({

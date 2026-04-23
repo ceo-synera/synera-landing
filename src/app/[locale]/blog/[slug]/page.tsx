@@ -75,6 +75,15 @@ const mdxComponents = {
   ),
 };
 
+// ── Static params (pre-render all posts) ─────────────────────────────────────
+
+export async function generateStaticParams() {
+  const locales = ["es", "en"];
+  return locales.flatMap((locale) =>
+    getAllPostsMeta(locale).map((post) => ({ locale, slug: post.slug }))
+  );
+}
+
 // ── Metadata ──────────────────────────────────────────────────────────────────
 
 export async function generateMetadata({
@@ -85,13 +94,21 @@ export async function generateMetadata({
   const { locale, slug } = await params;
   const post = getPostBySlug(slug, locale);
   if (!post) return {};
+  const url = `https://syneratechnologies.com/${locale}/blog/${post.slug}`;
   return {
     title: `${post.title} | Synera Technologies`,
     description: post.excerpt,
+    alternates: {
+      canonical: url,
+    },
     openGraph: {
+      type: "article",
       title: post.title,
       description: post.excerpt,
-      images: [{ url: "/opengraph-image.png", width: 1200, height: 630 }],
+      url,
+      publishedTime: post.date,
+      authors: ["Synera Technologies"],
+      images: [{ url: "/opengraph-image.png", width: 1200, height: 630, alt: post.title }],
     },
     twitter: {
       card: "summary_large_image",
@@ -119,9 +136,63 @@ export default async function BlogPostPage({
   const related = getRelatedPosts(post, locale, 2);
 
   const linkedInUrl = `https://www.linkedin.com/sharing/share-offsite/?url=https://syneratechnologies.com/${locale}/blog/${post.slug}`;
+  const postUrl = `https://syneratechnologies.com/${locale}/blog/${post.slug}`;
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Inicio", item: `https://syneratechnologies.com/${locale}` },
+      { "@type": "ListItem", position: 2, name: "Blog", item: `https://syneratechnologies.com/${locale}/blog` },
+      { "@type": "ListItem", position: 3, name: post.title, item: postUrl },
+    ],
+  };
+
+  const blogPostingSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: post.excerpt,
+    url: postUrl,
+    datePublished: post.date,
+    dateModified: post.date,
+    inLanguage: locale === "es" ? "es-UY" : "en-US",
+    image: {
+      "@type": "ImageObject",
+      url: "https://syneratechnologies.com/opengraph-image.png",
+      width: 1200,
+      height: 630,
+    },
+    author: {
+      "@type": "Organization",
+      name: "Synera Technologies",
+      url: "https://syneratechnologies.com",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Synera Technologies",
+      url: "https://syneratechnologies.com",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://syneratechnologies.com/favicon.svg",
+      },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": postUrl,
+    },
+  };
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* ── Article header ── */}
       <header className="pt-28 pb-10 bg-white border-b border-border-light">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

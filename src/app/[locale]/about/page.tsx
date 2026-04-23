@@ -5,13 +5,13 @@ import ValuesSection from "@/components/sections/about/ValuesSection";
 import AboutCTA from "@/components/sections/about/AboutCTA";
 
 const titles: Record<string, string> = {
-  es: "Nosotros — El equipo detrás de Synera Technologies",
-  en: "About Us — The Team Behind Synera Technologies",
+  es: "Sobre Nosotros | Equipo de Automatización IA — Synera Technologies",
+  en: "About Us | AI Automation Team — Synera Technologies",
 };
 
 const descriptions: Record<string, string> = {
-  es: "Somos un equipo pequeño con una misión grande: hacer que la IA sea accesible para cualquier negocio. Conocé nuestra historia y valores.",
-  en: "We are a small team with a big mission: making AI accessible to any business. Learn about our story and values.",
+  es: "Somos una agencia de automatización con IA especializada en negocios latinoamericanos. Pequeño equipo, resultados reales. Conocé nuestra historia, misión y valores.",
+  en: "We are an AI automation agency specialized in Latin American businesses. Small team, real results. Learn about our story, mission and values.",
 };
 
 export async function generateMetadata({
